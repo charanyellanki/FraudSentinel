@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-type Tone = "neutral" | "success" | "warning" | "danger" | "info";
+import type { Tone } from "@/lib/tone";
 
 const TONES: Record<Tone, string> = {
   neutral: "bg-zinc-100 text-zinc-700 ring-zinc-200",
@@ -26,11 +26,4 @@ export function Badge({
       {children}
     </span>
   );
-}
-
-export function labelTone(label: string): Tone {
-  if (label === "legit" || label === "approve" || label === "low" || label === "stable") return "success";
-  if (label === "borderline" || label === "review" || label === "medium" || label === "warning") return "warning";
-  if (label === "fraud" || label === "decline" || label === "high" || label === "drift") return "danger";
-  return "neutral";
 }

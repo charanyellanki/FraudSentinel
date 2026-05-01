@@ -1,5 +1,7 @@
+import { labelTone } from "@/lib/tone";
 import type { PredictionResponse } from "@/lib/types";
-import { Badge, labelTone } from "./ui/Badge";
+
+import { Badge } from "./ui/Badge";
 
 export function PredictionCard({ prediction }: { prediction: PredictionResponse }) {
   const p = prediction.fraud_probability;

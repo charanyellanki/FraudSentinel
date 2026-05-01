@@ -1,5 +1,7 @@
+import { labelTone } from "@/lib/tone";
 import type { RationaleResponse } from "@/lib/types";
-import { Badge, labelTone } from "./ui/Badge";
+
+import { Badge } from "./ui/Badge";
 
 export function RationaleDisplay({ rationale }: { rationale: RationaleResponse }) {
   return (

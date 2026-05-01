@@ -1,7 +1,9 @@
 import { useMemo, useState } from "react";
 
+import { labelTone } from "@/lib/tone";
 import type { DemoTransactionSummary, PredictedLabel } from "@/lib/types";
-import { Badge, labelTone } from "./ui/Badge";
+
+import { Badge } from "./ui/Badge";
 
 const FILTERS: { key: "all" | PredictedLabel; label: string }[] = [
   { key: "all", label: "All" },

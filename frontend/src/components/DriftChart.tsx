@@ -1,8 +1,10 @@
 import { useMemo, useState } from "react";
 import { CartesianGrid, Line, LineChart, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
+import { labelTone } from "@/lib/tone";
 import type { DriftReport } from "@/lib/types";
-import { Badge, labelTone } from "./ui/Badge";
+
+import { Badge } from "./ui/Badge";
 
 export function DriftChart({ drift }: { drift: DriftReport }) {
   const [selectedFeature, setSelectedFeature] = useState<string>("TransactionAmt");
