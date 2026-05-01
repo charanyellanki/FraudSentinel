@@ -1,0 +1,20 @@
+# Render deployment config. Apply with: https://dashboard.render.com/blueprints
+services:
+  - type: web
+    name: fraudsentinel-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    region: oregon
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: APP_VERSION
+        sync: false
+      # CORS_ORIGIN_REGEX is read by app/config.py from settings if overridden via env.
+      # Defaults already cover *.vercel.app — set this to override for staging domains.
+      - key: DEBUG
+        value: "false"

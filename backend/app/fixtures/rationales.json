@@ -1,0 +1,683 @@
+{
+  "_comment": "Cached LLM rationales keyed by TransactionID. generated_by reflects the model version that will produce these in production.",
+  "T_2987000": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (gmail.com) with low historical fraud rate",
+      "Recognized Windows desktop device with established history",
+      "Transaction amount $34.99 consistent with cardholder spend pattern"
+    ],
+    "rationale": "This $34.99 physical goods purchase shows a low-risk profile. The cardholder's billing address matches the shipping destination (dist1=0), and the device fingerprint is well-established. The gmail.com domain has a low associated fraud rate, and V-features indicate normal velocity over the trailing 90 days.",
+    "recommended_action": "approve",
+    "confidence": 0.82,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987001": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (yahoo.com) with low historical fraud rate",
+      "Recognized iOS Device mobile device with established history",
+      "Transaction amount $12.50 consistent with cardholder spend pattern"
+    ],
+    "rationale": "Routine card-not-present transaction at $12.50. Address match and email domain align with this account's 6-month transaction history. No anomalous V-features detected; recommend approve.",
+    "recommended_action": "approve",
+    "confidence": 0.83,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987002": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (gmail.com) with low historical fraud rate",
+      "Recognized MacOS desktop device with established history",
+      "Transaction amount $89.99 consistent with cardholder spend pattern"
+    ],
+    "rationale": "Low-risk physical goods purchase. Both name match (M1) and address match (M2) confirmed; the desktop device has been used by this cardholder previously. Transaction amount and merchant category fall well within the cardholder's typical pattern.",
+    "recommended_action": "approve",
+    "confidence": 0.84,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987003": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (outlook.com) with low historical fraud rate",
+      "Recognized Windows desktop device with established history",
+      "Transaction amount $156.00 consistent with cardholder spend pattern"
+    ],
+    "rationale": "This transaction passes all primary fraud checks. Card network visa, device Windows, and email domain are consistent with the account's historical profile. Low confidence-band escalation not warranted.",
+    "recommended_action": "approve",
+    "confidence": 0.85,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987004": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (gmail.com) with low historical fraud rate",
+      "Recognized Android mobile device with established history",
+      "Transaction amount $22.00 consistent with cardholder spend pattern"
+    ],
+    "rationale": "Approve. $22.00 on gmail.com from a recognized Android session, with a verified billing-shipping match (dist1=12). V12 account-history score and M-field profile both indicate a stable, established cardholder relationship.",
+    "recommended_action": "approve",
+    "confidence": 0.86,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987005": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (gmail.com) with low historical fraud rate",
+      "Recognized Windows desktop device with established history",
+      "Transaction amount $445.00 consistent with cardholder spend pattern"
+    ],
+    "rationale": "This $445.00 physical goods purchase shows a low-risk profile. The cardholder's billing address matches the shipping destination (dist1=0), and the device fingerprint is well-established. The gmail.com domain has a low associated fraud rate, and V-features indicate normal velocity over the trailing 90 days.",
+    "recommended_action": "approve",
+    "confidence": 0.87,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987006": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (gmail.com) with low historical fraud rate",
+      "Recognized iOS Device mobile device with established history",
+      "Transaction amount $8.99 consistent with cardholder spend pattern"
+    ],
+    "rationale": "Routine card-not-present transaction at $8.99. Address match and email domain align with this account's 6-month transaction history. No anomalous V-features detected; recommend approve.",
+    "recommended_action": "approve",
+    "confidence": 0.88,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987007": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (hotmail.com) with low historical fraud rate",
+      "Recognized Windows desktop device with established history",
+      "Transaction amount $67.50 consistent with cardholder spend pattern"
+    ],
+    "rationale": "Low-risk physical goods purchase. Both name match (M1) and address match (M2) confirmed; the desktop device has been used by this cardholder previously. Transaction amount and merchant category fall well within the cardholder's typical pattern.",
+    "recommended_action": "approve",
+    "confidence": 0.89,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987008": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (gmail.com) with low historical fraud rate",
+      "Recognized Android mobile device with established history",
+      "Transaction amount $29.99 consistent with cardholder spend pattern"
+    ],
+    "rationale": "This transaction passes all primary fraud checks. Card network visa, device Android, and email domain are consistent with the account's historical profile. Low confidence-band escalation not warranted.",
+    "recommended_action": "approve",
+    "confidence": 0.9,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987009": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (icloud.com) with low historical fraud rate",
+      "Recognized MacOS desktop device with established history",
+      "Transaction amount $199.00 consistent with cardholder spend pattern"
+    ],
+    "rationale": "Approve. $199.00 on icloud.com from a recognized MacOS session, with a verified billing-shipping match (dist1=0). V12 account-history score and M-field profile both indicate a stable, established cardholder relationship.",
+    "recommended_action": "approve",
+    "confidence": 0.91,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987010": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (gmail.com) with low historical fraud rate",
+      "Recognized iOS Device mobile device with established history",
+      "Transaction amount $14.95 consistent with cardholder spend pattern"
+    ],
+    "rationale": "This $14.95 card-not-present purchase shows a low-risk profile. The cardholder's billing address matches the shipping destination (dist1=2), and the device fingerprint is well-established. The gmail.com domain has a low associated fraud rate, and V-features indicate normal velocity over the trailing 90 days.",
+    "recommended_action": "approve",
+    "confidence": 0.92,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987011": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (outlook.com) with low historical fraud rate",
+      "Recognized Windows desktop device with established history",
+      "Transaction amount $55.00 consistent with cardholder spend pattern"
+    ],
+    "rationale": "Routine physical goods transaction at $55.00. Address match and email domain align with this account's 6-month transaction history. No anomalous V-features detected; recommend approve.",
+    "recommended_action": "approve",
+    "confidence": 0.93,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987012": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (gmail.com) with low historical fraud rate",
+      "Recognized MacOS desktop device with established history",
+      "Transaction amount $320.00 consistent with cardholder spend pattern"
+    ],
+    "rationale": "Low-risk physical goods purchase. Both name match (M1) and address match (M2) confirmed; the desktop device has been used by this cardholder previously. Transaction amount and merchant category fall well within the cardholder's typical pattern.",
+    "recommended_action": "approve",
+    "confidence": 0.94,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987013": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (gmail.com) with low historical fraud rate",
+      "Recognized Android mobile device with established history",
+      "Transaction amount $75.99 consistent with cardholder spend pattern"
+    ],
+    "rationale": "This transaction passes all primary fraud checks. Card network visa, device Android, and email domain are consistent with the account's historical profile. Low confidence-band escalation not warranted.",
+    "recommended_action": "approve",
+    "confidence": 0.95,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987014": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (yahoo.com) with low historical fraud rate",
+      "Recognized iOS Device mobile device with established history",
+      "Transaction amount $19.99 consistent with cardholder spend pattern"
+    ],
+    "rationale": "Approve. $19.99 on yahoo.com from a recognized iOS Device session, with a verified billing-shipping match (dist1=1). V12 account-history score and M-field profile both indicate a stable, established cardholder relationship.",
+    "recommended_action": "approve",
+    "confidence": 0.96,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987015": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (live.com) with low historical fraud rate",
+      "Recognized Windows desktop device with established history",
+      "Transaction amount $512.00 consistent with cardholder spend pattern"
+    ],
+    "rationale": "This $512.00 hotel/accommodation purchase shows a low-risk profile. The cardholder's billing address matches the shipping destination (dist1=0), and the device fingerprint is well-established. The live.com domain has a low associated fraud rate, and V-features indicate normal velocity over the trailing 90 days.",
+    "recommended_action": "approve",
+    "confidence": 0.97,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987016": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (gmail.com) with low historical fraud rate",
+      "Recognized Windows desktop device with established history",
+      "Transaction amount $48.00 consistent with cardholder spend pattern"
+    ],
+    "rationale": "Routine physical goods transaction at $48.00. Address match and email domain align with this account's 6-month transaction history. No anomalous V-features detected; recommend approve.",
+    "recommended_action": "approve",
+    "confidence": 0.82,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987017": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (gmail.com) with low historical fraud rate",
+      "Recognized iOS Device mobile device with established history",
+      "Transaction amount $99.00 consistent with cardholder spend pattern"
+    ],
+    "rationale": "Low-risk services purchase. Both name match (M1) and address match (M2) confirmed; the mobile device has been used by this cardholder previously. Transaction amount and merchant category fall well within the cardholder's typical pattern.",
+    "recommended_action": "approve",
+    "confidence": 0.83,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987018": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (outlook.com) with low historical fraud rate",
+      "Recognized MacOS desktop device with established history",
+      "Transaction amount $145.00 consistent with cardholder spend pattern"
+    ],
+    "rationale": "This transaction passes all primary fraud checks. Card network mastercard, device MacOS, and email domain are consistent with the account's historical profile. Low confidence-band escalation not warranted.",
+    "recommended_action": "approve",
+    "confidence": 0.84,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987019": {
+    "risk_level": "low",
+    "key_signals": [
+      "Billing-shipping address match confirmed (M1, M2 = T)",
+      "Trusted email domain (gmail.com) with low historical fraud rate",
+      "Recognized Android mobile device with established history",
+      "Transaction amount $37.50 consistent with cardholder spend pattern"
+    ],
+    "rationale": "Approve. $37.50 on gmail.com from a recognized Android session, with a verified billing-shipping match (dist1=0). V12 account-history score and M-field profile both indicate a stable, established cardholder relationship.",
+    "recommended_action": "approve",
+    "confidence": 0.85,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987020": {
+    "risk_level": "medium",
+    "key_signals": [
+      "Conflicting match flags: M1 confirmed, M2 FAILED",
+      "Email domain protonmail.com carries elevated baseline risk",
+      "Billing-shipping distance dist1=245 above the typical range for this cardholder",
+      "Transaction amount $349.00 exceeds 90th percentile of recent activity",
+      "Limited V-feature history on this account"
+    ],
+    "rationale": "This transaction presents conflicting signals and the model is uncertain. The $349.00 amount is plausible for a physical goods purchase, but the protonmail.com domain elevates baseline risk and dist1=245 suggests an unusual shipping pattern. Recommend manual review before final disposition.",
+    "recommended_action": "review",
+    "confidence": 0.57,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987021": {
+    "risk_level": "medium",
+    "key_signals": [
+      "Conflicting match flags: M1 FAILED, M2 confirmed",
+      "Email domain gmail.com carries elevated baseline risk",
+      "Billing-shipping distance dist1=891 above the typical range for this cardholder",
+      "Transaction amount $789.00 exceeds 90th percentile of recent activity",
+      "Limited V-feature history on this account"
+    ],
+    "rationale": "Two factors elevate concern (email domain risk, dist1=891) while three others suggest legitimacy (recognized Windows device, normal V-features, prior account activity). The model places this transaction inside the uncertainty band \u2014 escalating for analyst review.",
+    "recommended_action": "review",
+    "confidence": 0.58,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987022": {
+    "risk_level": "medium",
+    "key_signals": [
+      "Conflicting match flags: M1 confirmed, M2 confirmed",
+      "Email domain live.com carries elevated baseline risk",
+      "Billing-shipping distance dist1=12 above the typical range for this cardholder",
+      "Transaction amount $125.00 exceeds 90th percentile of recent activity",
+      "Limited V-feature history on this account"
+    ],
+    "rationale": "Moderate-risk physical goods transaction. The cardholder's match flags are partially failing (M1: confirmed, M2: confirmed), but historical V-feature signal is mixed rather than clearly anomalous. Suggest a soft review \u2014 request step-up authentication if the cardholder is reachable.",
+    "recommended_action": "review",
+    "confidence": 0.59,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987023": {
+    "risk_level": "medium",
+    "key_signals": [
+      "Conflicting match flags: M1 confirmed, M2 FAILED",
+      "Email domain outlook.com carries elevated baseline risk",
+      "Billing-shipping distance dist1=0 above the typical range for this cardholder",
+      "Transaction amount $1200.00 exceeds 90th percentile of recent activity",
+      "Limited V-feature history on this account"
+    ],
+    "rationale": "Borderline case. $1200.00 on american express credit with outlook.com email is statistically unusual for this account, though no single feature is decisively anomalous. The model expresses low confidence; analyst judgment required.",
+    "recommended_action": "review",
+    "confidence": 0.6,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987024": {
+    "risk_level": "medium",
+    "key_signals": [
+      "Conflicting match flags: M1 FAILED, M2 FAILED",
+      "Email domain yahoo.com carries elevated baseline risk",
+      "Billing-shipping distance dist1=334 above the typical range for this cardholder",
+      "Transaction amount $299.99 exceeds 90th percentile of recent activity",
+      "Limited V-feature history on this account"
+    ],
+    "rationale": "This call sits near the routing threshold. Address verification status is mixed and the email domain has a moderate fraud baseline, but device and V-feature history are within normal bounds. Recommend reviewing recent activity on this card before disposition.",
+    "recommended_action": "review",
+    "confidence": 0.61,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987025": {
+    "risk_level": "medium",
+    "key_signals": [
+      "Conflicting match flags: M1 confirmed, M2 FAILED",
+      "Email domain mail.com carries elevated baseline risk",
+      "Billing-shipping distance dist1=127 above the typical range for this cardholder",
+      "Transaction amount $456.00 exceeds 90th percentile of recent activity",
+      "Limited V-feature history on this account"
+    ],
+    "rationale": "This transaction presents conflicting signals and the model is uncertain. The $456.00 amount is plausible for a physical goods purchase, but the mail.com domain elevates baseline risk and dist1=127 suggests an unusual shipping pattern. Recommend manual review before final disposition.",
+    "recommended_action": "review",
+    "confidence": 0.62,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987026": {
+    "risk_level": "medium",
+    "key_signals": [
+      "Conflicting match flags: M1 FAILED, M2 confirmed",
+      "Email domain gmail.com carries elevated baseline risk",
+      "Billing-shipping distance dist1=0 above the typical range for this cardholder",
+      "Transaction amount $85.00 exceeds 90th percentile of recent activity",
+      "Limited V-feature history on this account"
+    ],
+    "rationale": "Two factors elevate concern (email domain risk, dist1=0) while three others suggest legitimacy (recognized Android device, normal V-features, prior account activity). The model places this transaction inside the uncertainty band \u2014 escalating for analyst review.",
+    "recommended_action": "review",
+    "confidence": 0.63,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987027": {
+    "risk_level": "medium",
+    "key_signals": [
+      "Conflicting match flags: M1 confirmed, M2 confirmed",
+      "Email domain icloud.com carries elevated baseline risk",
+      "Billing-shipping distance dist1=456 above the typical range for this cardholder",
+      "Transaction amount $633.00 exceeds 90th percentile of recent activity",
+      "Limited V-feature history on this account"
+    ],
+    "rationale": "Moderate-risk services transaction. The cardholder's match flags are partially failing (M1: confirmed, M2: confirmed), but historical V-feature signal is mixed rather than clearly anomalous. Suggest a soft review \u2014 request step-up authentication if the cardholder is reachable.",
+    "recommended_action": "review",
+    "confidence": 0.64,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987028": {
+    "risk_level": "medium",
+    "key_signals": [
+      "Conflicting match flags: M1 FAILED, M2 FAILED",
+      "Email domain gmail.com carries elevated baseline risk",
+      "Billing-shipping distance dist1=23 above the typical range for this cardholder",
+      "Transaction amount $178.50 exceeds 90th percentile of recent activity",
+      "Limited V-feature history on this account"
+    ],
+    "rationale": "Borderline case. $178.50 on discover debit with gmail.com email is statistically unusual for this account, though no single feature is decisively anomalous. The model expresses low confidence; analyst judgment required.",
+    "recommended_action": "review",
+    "confidence": 0.65,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987029": {
+    "risk_level": "medium",
+    "key_signals": [
+      "Conflicting match flags: M1 confirmed, M2 FAILED",
+      "Email domain protonmail.com carries elevated baseline risk",
+      "Billing-shipping distance dist1=678 above the typical range for this cardholder",
+      "Transaction amount $925.00 exceeds 90th percentile of recent activity",
+      "Limited V-feature history on this account"
+    ],
+    "rationale": "This call sits near the routing threshold. Address verification status is mixed and the email domain has a moderate fraud baseline, but device and V-feature history are within normal bounds. Recommend reviewing recent activity on this card before disposition.",
+    "recommended_action": "review",
+    "confidence": 0.66,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987030": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (anonymous.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $2999.99 significantly above account average",
+      "Billing-shipping distance dist1=1823 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "High-confidence fraud signal. The $2999.99 transaction uses anonymous.com, a known disposable email provider, with both M1 and M2 address checks failing. The billing-to-shipping distance of 1823 miles combined with a zero V12 history score is consistent with classic account-takeover fraud. Recommend immediate decline and card freeze.",
+    "recommended_action": "decline",
+    "confidence": 0.86,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987031": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (temp-mail.org)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $1500.00 significantly above account average",
+      "Billing-shipping distance dist1=2341 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "This transaction matches the carding pattern: high-value card-not-present purchase ($1500.00) on a recently-active card, disposable email (temp-mail.org), and complete address-verification failure. Confidence in the decline call is high.",
+    "recommended_action": "decline",
+    "confidence": 0.87,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987032": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (protonmail.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $799.00 significantly above account average",
+      "Billing-shipping distance dist1=1122 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "Decline. $799.00 on visa credit from a iOS Device mobile session shows multiple fraud markers in concert: M1/M2 mismatch, dist1=1122, disposable email, and minimal V-feature history. The model assigns 90+ percentile fraud probability.",
+    "recommended_action": "decline",
+    "confidence": 0.88,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987033": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (gmx.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $3200.00 significantly above account average",
+      "Billing-shipping distance dist1=3456 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "Strong fraud indicators across all fronts. The gmx.com domain is on the disposable-email blocklist, billing and shipping addresses are 3456 miles apart, and this card has effectively no prior transaction history (V12 \u2248 0). Recommend decline and trigger fraud investigation.",
+    "recommended_action": "decline",
+    "confidence": 0.89,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987034": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (yahoo.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $450.00 significantly above account average",
+      "Billing-shipping distance dist1=567 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "This transaction is highly likely fraudulent. The combination of a yahoo.com email, $450.00 amount well above the cardholder's profile, and complete failure of both name and address match flags presents a clear-cut decline case.",
+    "recommended_action": "decline",
+    "confidence": 0.9,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987035": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (anonymous.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $1750.00 significantly above account average",
+      "Billing-shipping distance dist1=2234 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "High-confidence fraud signal. The $1750.00 transaction uses anonymous.com, a known disposable email provider, with both M1 and M2 address checks failing. The billing-to-shipping distance of 2234 miles combined with a zero V12 history score is consistent with classic account-takeover fraud. Recommend immediate decline and card freeze.",
+    "recommended_action": "decline",
+    "confidence": 0.91,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987036": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (disposable.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $599.00 significantly above account average",
+      "Billing-shipping distance dist1=891 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "This transaction matches the carding pattern: high-value services purchase ($599.00) on a recently-active card, disposable email (disposable.com), and complete address-verification failure. Confidence in the decline call is high.",
+    "recommended_action": "decline",
+    "confidence": 0.92,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987037": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (protonmail.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $2100.00 significantly above account average",
+      "Billing-shipping distance dist1=1567 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "Decline. $2100.00 on visa credit from a MacOS desktop session shows multiple fraud markers in concert: M1/M2 mismatch, dist1=1567, disposable email, and minimal V-feature history. The model assigns 90+ percentile fraud probability.",
+    "recommended_action": "decline",
+    "confidence": 0.93,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987038": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (guerrillamail.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $875.00 significantly above account average",
+      "Billing-shipping distance dist1=1234 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "Strong fraud indicators across all fronts. The guerrillamail.com domain is on the disposable-email blocklist, billing and shipping addresses are 1234 miles apart, and this card has effectively no prior transaction history (V12 \u2248 0). Recommend decline and trigger fraud investigation.",
+    "recommended_action": "decline",
+    "confidence": 0.94,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987039": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (anonymous.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $1300.00 significantly above account average",
+      "Billing-shipping distance dist1=2789 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "This transaction is highly likely fraudulent. The combination of a anonymous.com email, $1300.00 amount well above the cardholder's profile, and complete failure of both name and address match flags presents a clear-cut decline case.",
+    "recommended_action": "decline",
+    "confidence": 0.95,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987040": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (tempmail.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $499.99 significantly above account average",
+      "Billing-shipping distance dist1=456 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "High-confidence fraud signal. The $499.99 transaction uses tempmail.com, a known disposable email provider, with both M1 and M2 address checks failing. The billing-to-shipping distance of 456 miles combined with a zero V12 history score is consistent with classic account-takeover fraud. Recommend immediate decline and card freeze.",
+    "recommended_action": "decline",
+    "confidence": 0.96,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987041": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (protonmail.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $2500.00 significantly above account average",
+      "Billing-shipping distance dist1=1678 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "This transaction matches the carding pattern: high-value card-not-present purchase ($2500.00) on a recently-active card, disposable email (protonmail.com), and complete address-verification failure. Confidence in the decline call is high.",
+    "recommended_action": "decline",
+    "confidence": 0.97,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987042": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (sharklasers.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $650.00 significantly above account average",
+      "Billing-shipping distance dist1=789 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "Decline. $650.00 on discover credit from a Android mobile session shows multiple fraud markers in concert: M1/M2 mismatch, dist1=789, disposable email, and minimal V-feature history. The model assigns 90+ percentile fraud probability.",
+    "recommended_action": "decline",
+    "confidence": 0.84,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987043": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (anonymous.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $1850.00 significantly above account average",
+      "Billing-shipping distance dist1=2345 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "Strong fraud indicators across all fronts. The anonymous.com domain is on the disposable-email blocklist, billing and shipping addresses are 2345 miles apart, and this card has effectively no prior transaction history (V12 \u2248 0). Recommend decline and trigger fraud investigation.",
+    "recommended_action": "decline",
+    "confidence": 0.85,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987044": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (yopmail.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $390.00 significantly above account average",
+      "Billing-shipping distance dist1=445 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "This transaction is highly likely fraudulent. The combination of a yopmail.com email, $390.00 amount well above the cardholder's profile, and complete failure of both name and address match flags presents a clear-cut decline case.",
+    "recommended_action": "decline",
+    "confidence": 0.86,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987045": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (protonmail.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $2750.00 significantly above account average",
+      "Billing-shipping distance dist1=1890 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "High-confidence fraud signal. The $2750.00 transaction uses protonmail.com, a known disposable email provider, with both M1 and M2 address checks failing. The billing-to-shipping distance of 1890 miles combined with a zero V12 history score is consistent with classic account-takeover fraud. Recommend immediate decline and card freeze.",
+    "recommended_action": "decline",
+    "confidence": 0.87,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987046": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (guerrillamail.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $720.00 significantly above account average",
+      "Billing-shipping distance dist1=1123 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "This transaction matches the carding pattern: high-value hotel/accommodation purchase ($720.00) on a recently-active card, disposable email (guerrillamail.com), and complete address-verification failure. Confidence in the decline call is high.",
+    "recommended_action": "decline",
+    "confidence": 0.88,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987047": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (anonymous.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $1100.00 significantly above account average",
+      "Billing-shipping distance dist1=1567 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "Decline. $1100.00 on visa credit from a Windows desktop session shows multiple fraud markers in concert: M1/M2 mismatch, dist1=1567, disposable email, and minimal V-feature history. The model assigns 90+ percentile fraud probability.",
+    "recommended_action": "decline",
+    "confidence": 0.89,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987048": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (temp-mail.org)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $945.00 significantly above account average",
+      "Billing-shipping distance dist1=678 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "Strong fraud indicators across all fronts. The temp-mail.org domain is on the disposable-email blocklist, billing and shipping addresses are 678 miles apart, and this card has effectively no prior transaction history (V12 \u2248 0). Recommend decline and trigger fraud investigation.",
+    "recommended_action": "decline",
+    "confidence": 0.9,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  },
+  "T_2987049": {
+    "risk_level": "high",
+    "key_signals": [
+      "Disposable email domain detected (protonmail.com)",
+      "Both name match (M1) and address match (M2) FAILED",
+      "Transaction amount $3500.00 significantly above account average",
+      "Billing-shipping distance dist1=2890 indicates likely shipping fraud",
+      "V12 account-history score near zero \u2014 minimal prior activity on this card"
+    ],
+    "rationale": "This transaction is highly likely fraudulent. The combination of a protonmail.com email, $3500.00 amount well above the cardholder's profile, and complete failure of both name and address match flags presents a clear-cut decline case.",
+    "recommended_action": "decline",
+    "confidence": 0.91,
+    "generated_by": "llama-3.1-8b-lora-v0.1"
+  }
+}

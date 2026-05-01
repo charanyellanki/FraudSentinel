@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.eggs/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.log
+
+# uv
+.uv/
+
+# Node
+node_modules/
+dist/
+build/
+.eslintcache
+*.tsbuildinfo
+
+# Vite
+.vite/
+frontend/dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Data (heavy IEEE-CIS files; keep out of git)
+ml/data/*
+!ml/data/.gitkeep
+ml/notebooks/*.ipynb_checkpoints/
+*.csv
+*.parquet
+*.pkl
+*.joblib
+*.pt
+*.bin
+*.gguf
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# OS
+Thumbs.db
+
+.claude/

@@ -1,0 +1,4555 @@
+{
+  "_comment": "Placeholder fixture data. Replace with real model outputs after training. Distribution: 20 legit / 10 borderline / 20 fraud. SHAP contributions are in log-odds space (LightGBM TreeExplainer default); base_value -2.14 corresponds to dataset prior. Sum of contributions \u2248 logit(fraud_probability) - base_value.",
+  "transactions": [
+    {
+      "TransactionID": "T_2987000",
+      "TransactionDT": 259200,
+      "TransactionAmt": 34.99,
+      "ProductCD": "W",
+      "card_type": "debit",
+      "card_network": "visa",
+      "addr1": 315,
+      "addr2": 87,
+      "dist1": 0.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 25.0,
+      "V13": 12.0,
+      "V14": 2.4,
+      "V15": 8.0,
+      "V16": 0.0,
+      "V17": 45.0,
+      "V18": 10.0,
+      "V19": 3.0,
+      "V20": 5.0,
+      "fraud_probability": 0.03,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "V12_account_history",
+            "value": 25.0,
+            "contribution": -0.3527
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.2855
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.2352
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.1848
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": -0.1344
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.1176
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 2.4,
+            "contribution": -0.084
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 34.99,
+            "contribution": 0.058
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987001",
+      "TransactionDT": 604937,
+      "TransactionAmt": 12.5,
+      "ProductCD": "C",
+      "card_type": "credit",
+      "card_network": "mastercard",
+      "addr1": 204,
+      "addr2": 31,
+      "dist1": 3.0,
+      "P_emaildomain": "yahoo.com",
+      "R_emaildomain": "yahoo.com",
+      "device_type": "mobile",
+      "device_info": "iOS Device",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 26.0,
+      "V13": 13.0,
+      "V14": 2.7,
+      "V15": 9.0,
+      "V16": 1.0,
+      "V17": 46.0,
+      "V18": 11.0,
+      "V19": 4.0,
+      "V20": 6.0,
+      "fraud_probability": 0.05,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "V12_account_history",
+            "value": 26.0,
+            "contribution": -0.2261
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.183
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.05,
+            "contribution": -0.1346
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.1184
+          },
+          {
+            "feature": "dist1",
+            "value": 3.0,
+            "contribution": -0.0861
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.0754
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 12.5,
+            "contribution": 0.0731
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 2.7,
+            "contribution": -0.0538
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987002",
+      "TransactionDT": 1037074,
+      "TransactionAmt": 89.99,
+      "ProductCD": "W",
+      "card_type": "debit",
+      "card_network": "visa",
+      "addr1": 441,
+      "addr2": 12,
+      "dist1": 0.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "desktop",
+      "device_info": "MacOS",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 27.0,
+      "V13": 14.0,
+      "V14": 3.0,
+      "V15": 10.0,
+      "V16": 2.0,
+      "V17": 47.0,
+      "V18": 12.0,
+      "V19": 5.0,
+      "V20": 7.0,
+      "fraud_probability": 0.04,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "V12_account_history",
+            "value": 27.0,
+            "contribution": -0.2795
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.2263
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.1863
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.1464
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": -0.1065
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.0932
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 89.99,
+            "contribution": 0.0667
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 3.0,
+            "contribution": -0.0666
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987003",
+      "TransactionDT": 1555611,
+      "TransactionAmt": 156.0,
+      "ProductCD": "H",
+      "card_type": "credit",
+      "card_network": "visa",
+      "addr1": 127,
+      "addr2": 64,
+      "dist1": 0.0,
+      "P_emaildomain": "outlook.com",
+      "R_emaildomain": "outlook.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 28.0,
+      "V13": 15.0,
+      "V14": 3.3,
+      "V15": 11.0,
+      "V16": 3.0,
+      "V17": 48.0,
+      "V18": 13.0,
+      "V19": 3.0,
+      "V20": 8.0,
+      "fraud_probability": 0.07,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "TransactionAmt",
+            "value": 156.0,
+            "contribution": 0.1937
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 28.0,
+            "contribution": -0.162
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.1312
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.108
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.0849
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": -0.0617
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.054
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 3.3,
+            "contribution": -0.0386
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987004",
+      "TransactionDT": 1987748,
+      "TransactionAmt": 22.0,
+      "ProductCD": "S",
+      "card_type": "debit",
+      "card_network": "mastercard",
+      "addr1": 329,
+      "addr2": 22,
+      "dist1": 12.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "mobile",
+      "device_info": "Android",
+      "M1": true,
+      "M2": false,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 29.0,
+      "V13": 16.0,
+      "V14": 3.6,
+      "V15": 12.0,
+      "V16": 4.0,
+      "V17": 49.0,
+      "V18": 14.0,
+      "V19": 4.0,
+      "V20": 9.0,
+      "fraud_probability": 0.06,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "M2_address_match",
+            "value": 0.0,
+            "contribution": 0.5015
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 29.0,
+            "contribution": -0.3719
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.2479
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.1948
+          },
+          {
+            "feature": "dist1",
+            "value": 12.0,
+            "contribution": -0.1417
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.124
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 3.6,
+            "contribution": -0.0885
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 22.0,
+            "contribution": 0.0557
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987005",
+      "TransactionDT": 2419885,
+      "TransactionAmt": 445.0,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "visa",
+      "addr1": 518,
+      "addr2": 91,
+      "dist1": 0.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 30.0,
+      "V13": 17.0,
+      "V14": 2.4,
+      "V15": 13.0,
+      "V16": 5.0,
+      "V17": 50.0,
+      "V18": 15.0,
+      "V19": 5.0,
+      "V20": 5.0,
+      "fraud_probability": 0.09,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "TransactionAmt",
+            "value": 445.0,
+            "contribution": 0.3682
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 30.0,
+            "contribution": -0.1371
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.111
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.0914
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.0718
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": -0.0522
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.0457
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 2.4,
+            "contribution": -0.0326
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987006",
+      "TransactionDT": 3024822,
+      "TransactionAmt": 8.99,
+      "ProductCD": "C",
+      "card_type": "debit",
+      "card_network": "discover",
+      "addr1": 267,
+      "addr2": 47,
+      "dist1": 0.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "mobile",
+      "device_info": "iOS Device",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 31.0,
+      "V13": 18.0,
+      "V14": 2.7,
+      "V15": 14.0,
+      "V16": 6.0,
+      "V17": 51.0,
+      "V18": 16.0,
+      "V19": 3.0,
+      "V20": 6.0,
+      "fraud_probability": 0.02,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "V12_account_history",
+            "value": 31.0,
+            "contribution": -0.4548
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.3682
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.3032
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.2382
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": -0.1733
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.1516
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 2.7,
+            "contribution": -0.1083
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 8.99,
+            "contribution": 0.0459
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987007",
+      "TransactionDT": 3543359,
+      "TransactionAmt": 67.5,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "mastercard",
+      "addr1": 374,
+      "addr2": 18,
+      "dist1": 5.0,
+      "P_emaildomain": "hotmail.com",
+      "R_emaildomain": "hotmail.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 32.0,
+      "V13": 19.0,
+      "V14": 3.0,
+      "V15": 15.0,
+      "V16": 7.0,
+      "V17": 52.0,
+      "V18": 17.0,
+      "V19": 4.0,
+      "V20": 7.0,
+      "fraud_probability": 0.08,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "V12_account_history",
+            "value": 32.0,
+            "contribution": -0.1006
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 67.5,
+            "contribution": 0.088
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.0814
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.05,
+            "contribution": -0.0599
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.0527
+          },
+          {
+            "feature": "dist1",
+            "value": 5.0,
+            "contribution": -0.0383
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.0335
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 3.0,
+            "contribution": -0.0239
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987008",
+      "TransactionDT": 4061896,
+      "TransactionAmt": 29.99,
+      "ProductCD": "S",
+      "card_type": "debit",
+      "card_network": "visa",
+      "addr1": 156,
+      "addr2": 73,
+      "dist1": 0.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "mobile",
+      "device_info": "Android",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 33.0,
+      "V13": 20.0,
+      "V14": 3.3,
+      "V15": 16.0,
+      "V16": 8.0,
+      "V17": 53.0,
+      "V18": 10.0,
+      "V19": 5.0,
+      "V20": 8.0,
+      "fraud_probability": 0.04,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "V12_account_history",
+            "value": 33.0,
+            "contribution": -0.2795
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.2263
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.1863
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.1464
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": -0.1065
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.0932
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 29.99,
+            "contribution": 0.0667
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 3.3,
+            "contribution": -0.0666
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987009",
+      "TransactionDT": 4580433,
+      "TransactionAmt": 199.0,
+      "ProductCD": "H",
+      "card_type": "credit",
+      "card_network": "american express",
+      "addr1": 602,
+      "addr2": 8,
+      "dist1": 0.0,
+      "P_emaildomain": "icloud.com",
+      "R_emaildomain": "icloud.com",
+      "device_type": "desktop",
+      "device_info": "MacOS",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 34.0,
+      "V13": 21.0,
+      "V14": 3.6,
+      "V15": 17.0,
+      "V16": 9.0,
+      "V17": 54.0,
+      "V18": 11.0,
+      "V19": 3.0,
+      "V20": 9.0,
+      "fraud_probability": 0.06,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "V12_account_history",
+            "value": 34.0,
+            "contribution": -0.2009
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 199.0,
+            "contribution": 0.1826
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.1627
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.1339
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.1052
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": -0.0765
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.067
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 3.6,
+            "contribution": -0.0478
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987010",
+      "TransactionDT": 5185370,
+      "TransactionAmt": 14.95,
+      "ProductCD": "C",
+      "card_type": "debit",
+      "card_network": "visa",
+      "addr1": 412,
+      "addr2": 56,
+      "dist1": 2.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "mobile",
+      "device_info": "iOS Device",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 35.0,
+      "V13": 22.0,
+      "V14": 2.4,
+      "V15": 8.0,
+      "V16": 10.0,
+      "V17": 55.0,
+      "V18": 12.0,
+      "V19": 4.0,
+      "V20": 5.0,
+      "fraud_probability": 0.03,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "V12_account_history",
+            "value": 35.0,
+            "contribution": -0.3527
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.2855
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.2352
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.1848
+          },
+          {
+            "feature": "dist1",
+            "value": 2.0,
+            "contribution": -0.1344
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.1176
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 2.4,
+            "contribution": -0.084
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 14.95,
+            "contribution": 0.058
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987011",
+      "TransactionDT": 5790307,
+      "TransactionAmt": 55.0,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "visa",
+      "addr1": 288,
+      "addr2": 39,
+      "dist1": 0.0,
+      "P_emaildomain": "outlook.com",
+      "R_emaildomain": "outlook.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 36.0,
+      "V13": 23.0,
+      "V14": 2.7,
+      "V15": 9.0,
+      "V16": 11.0,
+      "V17": 56.0,
+      "V18": 13.0,
+      "V19": 5.0,
+      "V20": 6.0,
+      "fraud_probability": 0.05,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "V12_account_history",
+            "value": 36.0,
+            "contribution": -0.2221
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.1798
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.1481
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.1164
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": -0.0846
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.074
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 55.0,
+            "contribution": 0.0736
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 2.7,
+            "contribution": -0.0529
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987012",
+      "TransactionDT": 6308844,
+      "TransactionAmt": 320.0,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "mastercard",
+      "addr1": 175,
+      "addr2": 68,
+      "dist1": 0.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "desktop",
+      "device_info": "MacOS",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 37.0,
+      "V13": 24.0,
+      "V14": 3.0,
+      "V15": 10.0,
+      "V16": 12.0,
+      "V17": 57.0,
+      "V18": 14.0,
+      "V19": 3.0,
+      "V20": 7.0,
+      "fraud_probability": 0.11,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "TransactionAmt",
+            "value": 320.0,
+            "contribution": 0.3943
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 37.0,
+            "contribution": -0.0873
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.0707
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.0582
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.0457
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": -0.0333
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.0291
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 3.0,
+            "contribution": -0.0208
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987013",
+      "TransactionDT": 6827381,
+      "TransactionAmt": 75.99,
+      "ProductCD": "R",
+      "card_type": "debit",
+      "card_network": "visa",
+      "addr1": 493,
+      "addr2": 25,
+      "dist1": 8.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "mobile",
+      "device_info": "Android",
+      "M1": true,
+      "M2": false,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 38.0,
+      "V13": 25.0,
+      "V14": 3.3,
+      "V15": 11.0,
+      "V16": 13.0,
+      "V17": 58.0,
+      "V18": 15.0,
+      "V19": 4.0,
+      "V20": 8.0,
+      "fraud_probability": 0.07,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "M2_address_match",
+            "value": 0.0,
+            "contribution": 0.5423
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 38.0,
+            "contribution": -0.3339
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.2226
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.1749
+          },
+          {
+            "feature": "dist1",
+            "value": 8.0,
+            "contribution": -0.1272
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.1113
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 3.3,
+            "contribution": -0.0795
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 75.99,
+            "contribution": 0.0603
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987014",
+      "TransactionDT": 7432318,
+      "TransactionAmt": 19.99,
+      "ProductCD": "C",
+      "card_type": "debit",
+      "card_network": "mastercard",
+      "addr1": 227,
+      "addr2": 52,
+      "dist1": 1.0,
+      "P_emaildomain": "yahoo.com",
+      "R_emaildomain": "yahoo.com",
+      "device_type": "mobile",
+      "device_info": "iOS Device",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 39.0,
+      "V13": 26.0,
+      "V14": 3.6,
+      "V15": 12.0,
+      "V16": 14.0,
+      "V17": 59.0,
+      "V18": 16.0,
+      "V19": 5.0,
+      "V20": 9.0,
+      "fraud_probability": 0.04,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "V12_account_history",
+            "value": 39.0,
+            "contribution": -0.2845
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.2303
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.05,
+            "contribution": -0.1694
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.149
+          },
+          {
+            "feature": "dist1",
+            "value": 1.0,
+            "contribution": -0.1084
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.0948
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 3.6,
+            "contribution": -0.0677
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 19.99,
+            "contribution": 0.0661
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987015",
+      "TransactionDT": 7950855,
+      "TransactionAmt": 512.0,
+      "ProductCD": "H",
+      "card_type": "credit",
+      "card_network": "visa",
+      "addr1": 341,
+      "addr2": 14,
+      "dist1": 0.0,
+      "P_emaildomain": "live.com",
+      "R_emaildomain": "live.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 40.0,
+      "V13": 12.0,
+      "V14": 2.4,
+      "V15": 13.0,
+      "V16": 15.0,
+      "V17": 60.0,
+      "V18": 17.0,
+      "V19": 3.0,
+      "V20": 5.0,
+      "fraud_probability": 0.08,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "TransactionAmt",
+            "value": 512.0,
+            "contribution": 0.3503
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 40.0,
+            "contribution": -0.1713
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.1387
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.1,
+            "contribution": -0.0897
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.0897
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": -0.0653
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.0571
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 2.4,
+            "contribution": -0.0408
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987016",
+      "TransactionDT": 8555792,
+      "TransactionAmt": 48.0,
+      "ProductCD": "W",
+      "card_type": "debit",
+      "card_network": "discover",
+      "addr1": 566,
+      "addr2": 81,
+      "dist1": 0.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 41.0,
+      "V13": 13.0,
+      "V14": 2.7,
+      "V15": 14.0,
+      "V16": 16.0,
+      "V17": 61.0,
+      "V18": 10.0,
+      "V19": 4.0,
+      "V20": 6.0,
+      "fraud_probability": 0.05,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "V12_account_history",
+            "value": 41.0,
+            "contribution": -0.2221
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.1798
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.1481
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.1164
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": -0.0846
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.074
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 48.0,
+            "contribution": 0.0736
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 2.7,
+            "contribution": -0.0529
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987017",
+      "TransactionDT": 9074329,
+      "TransactionAmt": 99.0,
+      "ProductCD": "S",
+      "card_type": "credit",
+      "card_network": "visa",
+      "addr1": 109,
+      "addr2": 33,
+      "dist1": 3.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "mobile",
+      "device_info": "iOS Device",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 42.0,
+      "V13": 14.0,
+      "V14": 3.0,
+      "V15": 15.0,
+      "V16": 17.0,
+      "V17": 62.0,
+      "V18": 11.0,
+      "V19": 5.0,
+      "V20": 7.0,
+      "fraud_probability": 0.06,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "V12_account_history",
+            "value": 42.0,
+            "contribution": -0.1748
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.1415
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.1165
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.0915
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 99.0,
+            "contribution": 0.0792
+          },
+          {
+            "feature": "dist1",
+            "value": 3.0,
+            "contribution": -0.0666
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.0583
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 3.0,
+            "contribution": -0.0416
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987018",
+      "TransactionDT": 9679266,
+      "TransactionAmt": 145.0,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "mastercard",
+      "addr1": 278,
+      "addr2": 7,
+      "dist1": 0.0,
+      "P_emaildomain": "outlook.com",
+      "R_emaildomain": "outlook.com",
+      "device_type": "desktop",
+      "device_info": "MacOS",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 43.0,
+      "V13": 15.0,
+      "V14": 3.3,
+      "V15": 16.0,
+      "V16": 18.0,
+      "V17": 63.0,
+      "V18": 12.0,
+      "V19": 3.0,
+      "V20": 8.0,
+      "fraud_probability": 0.09,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "TransactionAmt",
+            "value": 145.0,
+            "contribution": 0.2121
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 43.0,
+            "contribution": -0.0976
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.079
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.0651
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.0511
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": -0.0372
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.0325
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 3.3,
+            "contribution": -0.0232
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987019",
+      "TransactionDT": 10284203,
+      "TransactionAmt": 37.5,
+      "ProductCD": "C",
+      "card_type": "debit",
+      "card_network": "visa",
+      "addr1": 432,
+      "addr2": 61,
+      "dist1": 0.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "mobile",
+      "device_info": "Android",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M2",
+      "M5": true,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 44.0,
+      "V13": 16.0,
+      "V14": 3.6,
+      "V15": 17.0,
+      "V16": 19.0,
+      "V17": 64.0,
+      "V18": 13.0,
+      "V19": 4.0,
+      "V20": 9.0,
+      "fraud_probability": 0.04,
+      "predicted_label": "legit",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "V12_account_history",
+            "value": 44.0,
+            "contribution": -0.2795
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.2263
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": -0.1863
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.1464
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": -0.1065
+          },
+          {
+            "feature": "V1_acct_tenure",
+            "value": 1.0,
+            "contribution": -0.0932
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 37.5,
+            "contribution": 0.0667
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 3.6,
+            "contribution": -0.0666
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987020",
+      "TransactionDT": 10543540,
+      "TransactionAmt": 349.0,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "visa",
+      "addr1": 187,
+      "addr2": 44,
+      "dist1": 245.0,
+      "P_emaildomain": "protonmail.com",
+      "R_emaildomain": "protonmail.com",
+      "device_type": "mobile",
+      "device_info": "iOS Device",
+      "M1": true,
+      "M2": false,
+      "M3": true,
+      "M4": "M1",
+      "M5": false,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 0.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 0.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 0.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 0.0,
+      "V12": 4.0,
+      "V13": 3.0,
+      "V14": 1.0,
+      "V15": 2.0,
+      "V16": 20.0,
+      "V17": 10.0,
+      "V18": 3.0,
+      "V19": 1.0,
+      "V20": 4.0,
+      "fraud_probability": 0.42,
+      "predicted_label": "borderline",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.6,
+            "contribution": 0.608
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 0.0,
+            "contribution": 0.5032
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 349.0,
+            "contribution": 0.4364
+          },
+          {
+            "feature": "dist1",
+            "value": 245.0,
+            "contribution": 0.276
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 4.0,
+            "contribution": 0.1887
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.1713
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 1.0,
+            "contribution": -0.0761
+          },
+          {
+            "feature": "device_risk",
+            "value": 0.0,
+            "contribution": 0.0524
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987021",
+      "TransactionDT": 11062077,
+      "TransactionAmt": 789.0,
+      "ProductCD": "C",
+      "card_type": "debit",
+      "card_network": "mastercard",
+      "addr1": 295,
+      "addr2": 17,
+      "dist1": 891.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": false,
+      "M2": true,
+      "M3": false,
+      "M4": "M1",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 0.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 0.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 0.0,
+      "V11": 1.0,
+      "V12": 5.0,
+      "V13": 4.0,
+      "V14": 0.6,
+      "V15": 3.0,
+      "V16": 21.0,
+      "V17": 11.0,
+      "V18": 4.0,
+      "V19": 2.0,
+      "V20": 2.0,
+      "fraud_probability": 0.38,
+      "predicted_label": "borderline",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "TransactionAmt",
+            "value": 789.0,
+            "contribution": 0.4824
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 0.0,
+            "contribution": 0.4713
+          },
+          {
+            "feature": "dist1",
+            "value": 891.0,
+            "contribution": 0.3427
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.2286
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": 0.2142
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.6,
+            "contribution": 0.1714
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 5.0,
+            "contribution": 0.1542
+          },
+          {
+            "feature": "device_risk",
+            "value": 0.0,
+            "contribution": 0.0428
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987022",
+      "TransactionDT": 11580614,
+      "TransactionAmt": 125.0,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "visa",
+      "addr1": 408,
+      "addr2": 53,
+      "dist1": 12.0,
+      "P_emaildomain": "live.com",
+      "R_emaildomain": "live.com",
+      "device_type": "mobile",
+      "device_info": "Android",
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": "M1",
+      "M5": false,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 0.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 0.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 0.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 6.0,
+      "V13": 5.0,
+      "V14": 0.8,
+      "V15": 4.0,
+      "V16": 22.0,
+      "V17": 12.0,
+      "V18": 5.0,
+      "V19": 1.0,
+      "V20": 3.0,
+      "fraud_probability": 0.45,
+      "predicted_label": "borderline",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "TransactionAmt",
+            "value": 125.0,
+            "contribution": 0.6667
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.1,
+            "contribution": 0.5951
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.8,
+            "contribution": 0.3902
+          },
+          {
+            "feature": "dist1",
+            "value": 12.0,
+            "contribution": 0.2107
+          },
+          {
+            "feature": "device_risk",
+            "value": 0.0,
+            "contribution": 0.0976
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.0098
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.0088
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 6.0,
+            "contribution": -0.0024
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987023",
+      "TransactionDT": 12099151,
+      "TransactionAmt": 1200.0,
+      "ProductCD": "H",
+      "card_type": "credit",
+      "card_network": "american express",
+      "addr1": 532,
+      "addr2": 9,
+      "dist1": 0.0,
+      "P_emaildomain": "outlook.com",
+      "R_emaildomain": "outlook.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": true,
+      "M2": false,
+      "M3": false,
+      "M4": "M1",
+      "M5": false,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 0.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 0.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 0.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 0.0,
+      "V12": 7.0,
+      "V13": 6.0,
+      "V14": 1.0,
+      "V15": 5.0,
+      "V16": 23.0,
+      "V17": 13.0,
+      "V18": 6.0,
+      "V19": 2.0,
+      "V20": 4.0,
+      "fraud_probability": 0.55,
+      "predicted_label": "borderline",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "TransactionAmt",
+            "value": 1200.0,
+            "contribution": 1.0965
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 0.0,
+            "contribution": 0.7519
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": 0.3916
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": 0.1566
+          },
+          {
+            "feature": "device_risk",
+            "value": 0.0,
+            "contribution": 0.0783
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.078
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 1.0,
+            "contribution": -0.0347
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 7.0,
+            "contribution": -0.0217
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987024",
+      "TransactionDT": 12531288,
+      "TransactionAmt": 299.99,
+      "ProductCD": "C",
+      "card_type": "debit",
+      "card_network": "visa",
+      "addr1": 216,
+      "addr2": 70,
+      "dist1": 334.0,
+      "P_emaildomain": "yahoo.com",
+      "R_emaildomain": "yahoo.com",
+      "device_type": "mobile",
+      "device_info": "iOS Device",
+      "M1": false,
+      "M2": false,
+      "M3": true,
+      "M4": "M1",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 0.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 0.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 0.0,
+      "V11": 1.0,
+      "V12": 8.0,
+      "V13": 3.0,
+      "V14": 0.6,
+      "V15": 2.0,
+      "V16": 24.0,
+      "V17": 8.0,
+      "V18": 3.0,
+      "V19": 1.0,
+      "V20": 2.0,
+      "fraud_probability": 0.48,
+      "predicted_label": "borderline",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "M1_name_match",
+            "value": 0.0,
+            "contribution": 0.5098
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 0.0,
+            "contribution": 0.4449
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 299.99,
+            "contribution": 0.3708
+          },
+          {
+            "feature": "dist1",
+            "value": 334.0,
+            "contribution": 0.2991
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.05,
+            "contribution": 0.2572
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.6,
+            "contribution": 0.1854
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 8.0,
+            "contribution": -0.0537
+          },
+          {
+            "feature": "device_risk",
+            "value": 0.0,
+            "contribution": 0.0463
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987025",
+      "TransactionDT": 13049825,
+      "TransactionAmt": 456.0,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "mastercard",
+      "addr1": 381,
+      "addr2": 26,
+      "dist1": 127.0,
+      "P_emaildomain": "mail.com",
+      "R_emaildomain": "mail.com",
+      "device_type": "desktop",
+      "device_info": "Linux",
+      "M1": true,
+      "M2": false,
+      "M3": false,
+      "M4": "M1",
+      "M5": false,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 0.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 0.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 0.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 4.0,
+      "V13": 4.0,
+      "V14": 0.8,
+      "V15": 3.0,
+      "V16": 25.0,
+      "V17": 9.0,
+      "V18": 4.0,
+      "V19": 2.0,
+      "V20": 3.0,
+      "fraud_probability": 0.52,
+      "predicted_label": "borderline",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "M2_address_match",
+            "value": 0.0,
+            "contribution": 0.5392
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.4,
+            "contribution": 0.528
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 456.0,
+            "contribution": 0.5078
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.8,
+            "contribution": 0.2247
+          },
+          {
+            "feature": "dist1",
+            "value": 127.0,
+            "contribution": 0.2075
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 4.0,
+            "contribution": 0.2022
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.1685
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.1578
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987026",
+      "TransactionDT": 13481962,
+      "TransactionAmt": 85.0,
+      "ProductCD": "R",
+      "card_type": "debit",
+      "card_network": "visa",
+      "addr1": 149,
+      "addr2": 88,
+      "dist1": 0.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "mobile",
+      "device_info": "Android",
+      "M1": false,
+      "M2": true,
+      "M3": true,
+      "M4": "M1",
+      "M5": false,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 0.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 0.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 0.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 0.0,
+      "V12": 5.0,
+      "V13": 5.0,
+      "V14": 1.0,
+      "V15": 4.0,
+      "V16": 26.0,
+      "V17": 10.0,
+      "V18": 5.0,
+      "V19": 1.0,
+      "V20": 4.0,
+      "fraud_probability": 0.4,
+      "predicted_label": "borderline",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "M1_name_match",
+            "value": 0.0,
+            "contribution": 0.726
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 85.0,
+            "contribution": 0.4334
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": 0.33
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 5.0,
+            "contribution": 0.2376
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.136
+          },
+          {
+            "feature": "dist1",
+            "value": 0.0,
+            "contribution": 0.132
+          },
+          {
+            "feature": "device_risk",
+            "value": 0.0,
+            "contribution": 0.066
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 1.0,
+            "contribution": -0.0544
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987027",
+      "TransactionDT": 14000499,
+      "TransactionAmt": 633.0,
+      "ProductCD": "S",
+      "card_type": "credit",
+      "card_network": "visa",
+      "addr1": 478,
+      "addr2": 35,
+      "dist1": 456.0,
+      "P_emaildomain": "icloud.com",
+      "R_emaildomain": "icloud.com",
+      "device_type": "desktop",
+      "device_info": "MacOS",
+      "M1": true,
+      "M2": true,
+      "M3": false,
+      "M4": "M1",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 1.0,
+      "V3": 1.0,
+      "V4": 0.0,
+      "V5": 1.0,
+      "V6": 1.0,
+      "V7": 0.0,
+      "V8": 1.0,
+      "V9": 1.0,
+      "V10": 0.0,
+      "V11": 1.0,
+      "V12": 6.0,
+      "V13": 6.0,
+      "V14": 0.6,
+      "V15": 5.0,
+      "V16": 27.0,
+      "V17": 11.0,
+      "V18": 6.0,
+      "V19": 2.0,
+      "V20": 2.0,
+      "fraud_probability": 0.58,
+      "predicted_label": "borderline",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "TransactionAmt",
+            "value": 633.0,
+            "contribution": 0.9223
+          },
+          {
+            "feature": "dist1",
+            "value": 456.0,
+            "contribution": 0.7219
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": 0.4512
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.6,
+            "contribution": 0.361
+          },
+          {
+            "feature": "device_risk",
+            "value": 0.0,
+            "contribution": 0.0902
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 1.0,
+            "contribution": -0.039
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.0351
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 6.0,
+            "contribution": -0.0098
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987028",
+      "TransactionDT": 14432636,
+      "TransactionAmt": 178.5,
+      "ProductCD": "W",
+      "card_type": "debit",
+      "card_network": "discover",
+      "addr1": 263,
+      "addr2": 19,
+      "dist1": 23.0,
+      "P_emaildomain": "gmail.com",
+      "R_emaildomain": "gmail.com",
+      "device_type": "mobile",
+      "device_info": "iOS Device",
+      "M1": false,
+      "M2": false,
+      "M3": true,
+      "M4": "M1",
+      "M5": false,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 0.0,
+      "V4": 1.0,
+      "V5": 1.0,
+      "V6": 0.0,
+      "V7": 1.0,
+      "V8": 1.0,
+      "V9": 0.0,
+      "V10": 1.0,
+      "V11": 1.0,
+      "V12": 7.0,
+      "V13": 3.0,
+      "V14": 0.8,
+      "V15": 2.0,
+      "V16": 28.0,
+      "V17": 12.0,
+      "V18": 3.0,
+      "V19": 1.0,
+      "V20": 3.0,
+      "fraud_probability": 0.36,
+      "predicted_label": "borderline",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "M1_name_match",
+            "value": 0.0,
+            "contribution": 0.4456
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 0.0,
+            "contribution": 0.3889
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 178.5,
+            "contribution": 0.2912
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.0,
+            "contribution": 0.2025
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.8,
+            "contribution": 0.162
+          },
+          {
+            "feature": "dist1",
+            "value": 23.0,
+            "contribution": 0.0934
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 7.0,
+            "contribution": -0.0595
+          },
+          {
+            "feature": "device_risk",
+            "value": 0.0,
+            "contribution": 0.0405
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987029",
+      "TransactionDT": 14951173,
+      "TransactionAmt": 925.0,
+      "ProductCD": "C",
+      "card_type": "credit",
+      "card_network": "mastercard",
+      "addr1": 354,
+      "addr2": 62,
+      "dist1": 678.0,
+      "P_emaildomain": "protonmail.com",
+      "R_emaildomain": "protonmail.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": true,
+      "M2": false,
+      "M3": false,
+      "M4": "M1",
+      "M5": false,
+      "M6": true,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 0.0,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 0.0,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 0.0,
+      "V9": 1.0,
+      "V10": 1.0,
+      "V11": 0.0,
+      "V12": 8.0,
+      "V13": 4.0,
+      "V14": 1.0,
+      "V15": 3.0,
+      "V16": 29.0,
+      "V17": 13.0,
+      "V18": 4.0,
+      "V19": 2.0,
+      "V20": 4.0,
+      "fraud_probability": 0.61,
+      "predicted_label": "borderline",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "TransactionAmt",
+            "value": 925.0,
+            "contribution": 0.8035
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.6,
+            "contribution": 0.7661
+          },
+          {
+            "feature": "M2_address_match",
+            "value": 0.0,
+            "contribution": 0.634
+          },
+          {
+            "feature": "dist1",
+            "value": 678.0,
+            "contribution": 0.5283
+          },
+          {
+            "feature": "M1_name_match",
+            "value": 1.0,
+            "contribution": -0.1223
+          },
+          {
+            "feature": "device_risk",
+            "value": 0.0,
+            "contribution": 0.066
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 1.0,
+            "contribution": -0.0543
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 8.0,
+            "contribution": -0.034
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987030",
+      "TransactionDT": 15210510,
+      "TransactionAmt": 2999.99,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "visa",
+      "addr1": 712,
+      "addr2": 5,
+      "dist1": 1823.0,
+      "P_emaildomain": "anonymous.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "mobile",
+      "device_info": "Android",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 0.0,
+      "V3": 1.0,
+      "V4": 0.0,
+      "V5": 0.0,
+      "V6": 0.0,
+      "V7": 1.0,
+      "V8": 0.0,
+      "V9": 0.0,
+      "V10": 0.0,
+      "V11": 1.0,
+      "V12": 1.0,
+      "V13": 0.0,
+      "V14": 0.05,
+      "V15": 0.0,
+      "V16": 30.0,
+      "V17": 0.0,
+      "V18": 0.0,
+      "V19": 1.0,
+      "V20": 0.0,
+      "fraud_probability": 0.97,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 1.0,
+            "contribution": 1.2104
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 2999.99,
+            "contribution": 1.162
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.7553
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.05,
+            "contribution": 0.6778
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.6003
+          },
+          {
+            "feature": "dist1",
+            "value": 1823.0,
+            "contribution": 0.581
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.3873
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.2421
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987031",
+      "TransactionDT": 15383447,
+      "TransactionAmt": 1500.0,
+      "ProductCD": "C",
+      "card_type": "debit",
+      "card_network": "mastercard",
+      "addr1": 134,
+      "addr2": 92,
+      "dist1": 2341.0,
+      "P_emaildomain": "temp-mail.org",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 1.0,
+      "V3": 0.0,
+      "V4": 0.0,
+      "V5": 0.0,
+      "V6": 1.0,
+      "V7": 0.0,
+      "V8": 0.0,
+      "V9": 0.0,
+      "V10": 1.0,
+      "V11": 0.0,
+      "V12": 0.0,
+      "V13": 1.0,
+      "V14": 0.1,
+      "V15": 1.0,
+      "V16": 31.0,
+      "V17": 1.0,
+      "V18": 1.0,
+      "V19": 0.0,
+      "V20": 1.0,
+      "fraud_probability": 0.94,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 1.0,
+            "contribution": 1.1482
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 1500.0,
+            "contribution": 0.8497
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.7165
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.5695
+          },
+          {
+            "feature": "dist1",
+            "value": 2341.0,
+            "contribution": 0.5512
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.1,
+            "contribution": 0.4593
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.3674
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.2296
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987032",
+      "TransactionDT": 15556384,
+      "TransactionAmt": 799.0,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "visa",
+      "addr1": 587,
+      "addr2": 28,
+      "dist1": 1122.0,
+      "P_emaildomain": "protonmail.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "mobile",
+      "device_info": "iOS Device",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 0.0,
+      "V3": 0.0,
+      "V4": 0.0,
+      "V5": 1.0,
+      "V6": 0.0,
+      "V7": 0.0,
+      "V8": 0.0,
+      "V9": 1.0,
+      "V10": 0.0,
+      "V11": 0.0,
+      "V12": 0.0,
+      "V13": 2.0,
+      "V14": 0.15,
+      "V15": 0.0,
+      "V16": 32.0,
+      "V17": 2.0,
+      "V18": 0.0,
+      "V19": 0.0,
+      "V20": 0.0,
+      "fraud_probability": 0.88,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.6,
+            "contribution": 0.9443
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.6757
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 799.0,
+            "contribution": 0.6495
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.5371
+          },
+          {
+            "feature": "dist1",
+            "value": 1122.0,
+            "contribution": 0.5029
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.15,
+            "contribution": 0.4331
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.2166
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 1.0,
+            "contribution": 0.1733
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987033",
+      "TransactionDT": 15642921,
+      "TransactionAmt": 3200.0,
+      "ProductCD": "H",
+      "card_type": "credit",
+      "card_network": "american express",
+      "addr1": 248,
+      "addr2": 13,
+      "dist1": 3456.0,
+      "P_emaildomain": "gmx.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 0.0,
+      "V3": 0.0,
+      "V4": 1.0,
+      "V5": 0.0,
+      "V6": 0.0,
+      "V7": 0.0,
+      "V8": 1.0,
+      "V9": 0.0,
+      "V10": 0.0,
+      "V11": 0.0,
+      "V12": 1.0,
+      "V13": 0.0,
+      "V14": 0.05,
+      "V15": 1.0,
+      "V16": 33.0,
+      "V17": 3.0,
+      "V18": 1.0,
+      "V19": 0.0,
+      "V20": 1.0,
+      "fraud_probability": 0.95,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "TransactionAmt",
+            "value": 3200.0,
+            "contribution": 1.0742
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.7,
+            "contribution": 1.0115
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.6982
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.05,
+            "contribution": 0.6266
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.555
+          },
+          {
+            "feature": "dist1",
+            "value": 3456.0,
+            "contribution": 0.5371
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.3581
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.2238
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987034",
+      "TransactionDT": 15815858,
+      "TransactionAmt": 450.0,
+      "ProductCD": "C",
+      "card_type": "debit",
+      "card_network": "discover",
+      "addr1": 395,
+      "addr2": 76,
+      "dist1": 567.0,
+      "P_emaildomain": "yahoo.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "mobile",
+      "device_info": "Android",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 0.0,
+      "V3": 1.0,
+      "V4": 0.0,
+      "V5": 0.0,
+      "V6": 0.0,
+      "V7": 1.0,
+      "V8": 0.0,
+      "V9": 0.0,
+      "V10": 0.0,
+      "V11": 1.0,
+      "V12": 0.0,
+      "V13": 1.0,
+      "V14": 0.1,
+      "V15": 0.0,
+      "V16": 34.0,
+      "V17": 4.0,
+      "V18": 0.0,
+      "V19": 0.0,
+      "V20": 0.0,
+      "fraud_probability": 0.82,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.05,
+            "contribution": 0.7031
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.6304
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 450.0,
+            "contribution": 0.5354
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.5011
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.1,
+            "contribution": 0.4041
+          },
+          {
+            "feature": "dist1",
+            "value": 567.0,
+            "contribution": 0.357
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.3233
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.202
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987035",
+      "TransactionDT": 15902395,
+      "TransactionAmt": 1750.0,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "mastercard",
+      "addr1": 622,
+      "addr2": 41,
+      "dist1": 2234.0,
+      "P_emaildomain": "anonymous.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 1.0,
+      "V3": 0.0,
+      "V4": 0.0,
+      "V5": 0.0,
+      "V6": 1.0,
+      "V7": 0.0,
+      "V8": 0.0,
+      "V9": 0.0,
+      "V10": 1.0,
+      "V11": 0.0,
+      "V12": 0.0,
+      "V13": 2.0,
+      "V14": 0.15,
+      "V15": 1.0,
+      "V16": 35.0,
+      "V17": 0.0,
+      "V18": 1.0,
+      "V19": 1.0,
+      "V20": 1.0,
+      "fraud_probability": 0.91,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 1.0,
+            "contribution": 1.0333
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 1750.0,
+            "contribution": 0.8163
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.6448
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.5125
+          },
+          {
+            "feature": "dist1",
+            "value": 2234.0,
+            "contribution": 0.496
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.15,
+            "contribution": 0.4133
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.3307
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.2067
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987036",
+      "TransactionDT": 15988932,
+      "TransactionAmt": 599.0,
+      "ProductCD": "S",
+      "card_type": "debit",
+      "card_network": "visa",
+      "addr1": 178,
+      "addr2": 58,
+      "dist1": 891.0,
+      "P_emaildomain": "disposable.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "mobile",
+      "device_info": "iOS Device",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 0.0,
+      "V3": 0.0,
+      "V4": 0.0,
+      "V5": 1.0,
+      "V6": 0.0,
+      "V7": 0.0,
+      "V8": 0.0,
+      "V9": 1.0,
+      "V10": 0.0,
+      "V11": 0.0,
+      "V12": 1.0,
+      "V13": 0.0,
+      "V14": 0.05,
+      "V15": 0.0,
+      "V16": 36.0,
+      "V17": 1.0,
+      "V18": 0.0,
+      "V19": 0.0,
+      "V20": 0.0,
+      "fraud_probability": 0.79,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 1.0,
+            "contribution": 0.8624
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.5381
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.05,
+            "contribution": 0.4829
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 599.0,
+            "contribution": 0.4827
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.4277
+          },
+          {
+            "feature": "dist1",
+            "value": 891.0,
+            "contribution": 0.3606
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.1725
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 1.0,
+            "contribution": 0.138
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987037",
+      "TransactionDT": 16075469,
+      "TransactionAmt": 2100.0,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "visa",
+      "addr1": 459,
+      "addr2": 22,
+      "dist1": 1567.0,
+      "P_emaildomain": "protonmail.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "desktop",
+      "device_info": "MacOS",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 0.0,
+      "V3": 0.0,
+      "V4": 1.0,
+      "V5": 0.0,
+      "V6": 0.0,
+      "V7": 0.0,
+      "V8": 1.0,
+      "V9": 0.0,
+      "V10": 0.0,
+      "V11": 0.0,
+      "V12": 0.0,
+      "V13": 1.0,
+      "V14": 0.1,
+      "V15": 1.0,
+      "V16": 37.0,
+      "V17": 2.0,
+      "V18": 1.0,
+      "V19": 0.0,
+      "V20": 1.0,
+      "fraud_probability": 0.93,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.6,
+            "contribution": 0.9693
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 2100.0,
+            "contribution": 0.956
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.6937
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.5514
+          },
+          {
+            "feature": "dist1",
+            "value": 1567.0,
+            "contribution": 0.5336
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.1,
+            "contribution": 0.4447
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.3557
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.2223
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987038",
+      "TransactionDT": 16162006,
+      "TransactionAmt": 875.0,
+      "ProductCD": "C",
+      "card_type": "debit",
+      "card_network": "mastercard",
+      "addr1": 311,
+      "addr2": 67,
+      "dist1": 1234.0,
+      "P_emaildomain": "guerrillamail.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "mobile",
+      "device_info": "Android",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 0.0,
+      "V3": 1.0,
+      "V4": 0.0,
+      "V5": 0.0,
+      "V6": 0.0,
+      "V7": 1.0,
+      "V8": 0.0,
+      "V9": 0.0,
+      "V10": 0.0,
+      "V11": 1.0,
+      "V12": 0.0,
+      "V13": 2.0,
+      "V14": 0.15,
+      "V15": 0.0,
+      "V16": 38.0,
+      "V17": 3.0,
+      "V18": 0.0,
+      "V19": 0.0,
+      "V20": 0.0,
+      "fraud_probability": 0.86,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 1.0,
+            "contribution": 0.9565
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.5969
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 875.0,
+            "contribution": 0.5883
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.4744
+          },
+          {
+            "feature": "dist1",
+            "value": 1234.0,
+            "contribution": 0.4591
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.15,
+            "contribution": 0.3826
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.3061
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.1913
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987039",
+      "TransactionDT": 16248543,
+      "TransactionAmt": 1300.0,
+      "ProductCD": "H",
+      "card_type": "credit",
+      "card_network": "visa",
+      "addr1": 537,
+      "addr2": 16,
+      "dist1": 2789.0,
+      "P_emaildomain": "anonymous.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 1.0,
+      "V3": 0.0,
+      "V4": 0.0,
+      "V5": 0.0,
+      "V6": 1.0,
+      "V7": 0.0,
+      "V8": 0.0,
+      "V9": 0.0,
+      "V10": 1.0,
+      "V11": 0.0,
+      "V12": 1.0,
+      "V13": 0.0,
+      "V14": 0.05,
+      "V15": 1.0,
+      "V16": 39.0,
+      "V17": 4.0,
+      "V18": 1.0,
+      "V19": 0.0,
+      "V20": 1.0,
+      "fraud_probability": 0.89,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 1.0,
+            "contribution": 0.9659
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 1300.0,
+            "contribution": 0.6761
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.6027
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.05,
+            "contribution": 0.5409
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.4791
+          },
+          {
+            "feature": "dist1",
+            "value": 2789.0,
+            "contribution": 0.4636
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.3091
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.1932
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987040",
+      "TransactionDT": 16335080,
+      "TransactionAmt": 499.99,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "mastercard",
+      "addr1": 264,
+      "addr2": 84,
+      "dist1": 456.0,
+      "P_emaildomain": "tempmail.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "mobile",
+      "device_info": "iOS Device",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 0.0,
+      "V3": 0.0,
+      "V4": 0.0,
+      "V5": 1.0,
+      "V6": 0.0,
+      "V7": 0.0,
+      "V8": 0.0,
+      "V9": 1.0,
+      "V10": 0.0,
+      "V11": 0.0,
+      "V12": 0.0,
+      "V13": 1.0,
+      "V14": 0.1,
+      "V15": 0.0,
+      "V16": 40.0,
+      "V17": 0.0,
+      "V18": 0.0,
+      "V19": 1.0,
+      "V20": 0.0,
+      "fraud_probability": 0.78,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 1.0,
+            "contribution": 0.9079
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.5665
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 499.99,
+            "contribution": 0.4903
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.4503
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.1,
+            "contribution": 0.3632
+          },
+          {
+            "feature": "dist1",
+            "value": 456.0,
+            "contribution": 0.3007
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.1816
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 1.0,
+            "contribution": 0.1453
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987041",
+      "TransactionDT": 16335217,
+      "TransactionAmt": 2500.0,
+      "ProductCD": "C",
+      "card_type": "debit",
+      "card_network": "visa",
+      "addr1": 681,
+      "addr2": 11,
+      "dist1": 1678.0,
+      "P_emaildomain": "protonmail.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 0.0,
+      "V3": 0.0,
+      "V4": 1.0,
+      "V5": 0.0,
+      "V6": 0.0,
+      "V7": 0.0,
+      "V8": 1.0,
+      "V9": 0.0,
+      "V10": 0.0,
+      "V11": 0.0,
+      "V12": 0.0,
+      "V13": 2.0,
+      "V14": 0.15,
+      "V15": 1.0,
+      "V16": 41.0,
+      "V17": 1.0,
+      "V18": 1.0,
+      "V19": 0.0,
+      "V20": 1.0,
+      "fraud_probability": 0.96,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "TransactionAmt",
+            "value": 2500.0,
+            "contribution": 1.154
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.6,
+            "contribution": 1.0705
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.766
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.6089
+          },
+          {
+            "feature": "dist1",
+            "value": 1678.0,
+            "contribution": 0.5893
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.15,
+            "contribution": 0.491
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.3928
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.2455
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987042",
+      "TransactionDT": 16421754,
+      "TransactionAmt": 650.0,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "discover",
+      "addr1": 192,
+      "addr2": 49,
+      "dist1": 789.0,
+      "P_emaildomain": "sharklasers.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "mobile",
+      "device_info": "Android",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 0.0,
+      "V3": 1.0,
+      "V4": 0.0,
+      "V5": 0.0,
+      "V6": 0.0,
+      "V7": 1.0,
+      "V8": 0.0,
+      "V9": 0.0,
+      "V10": 0.0,
+      "V11": 1.0,
+      "V12": 1.0,
+      "V13": 0.0,
+      "V14": 0.05,
+      "V15": 0.0,
+      "V16": 42.0,
+      "V17": 2.0,
+      "V18": 0.0,
+      "V19": 0.0,
+      "V20": 0.0,
+      "fraud_probability": 0.83,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 1.0,
+            "contribution": 0.8939
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.5578
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 650.0,
+            "contribution": 0.5095
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.05,
+            "contribution": 0.5006
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.4434
+          },
+          {
+            "feature": "dist1",
+            "value": 789.0,
+            "contribution": 0.3556
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.2861
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.1788
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987043",
+      "TransactionDT": 16508291,
+      "TransactionAmt": 1850.0,
+      "ProductCD": "S",
+      "card_type": "credit",
+      "card_network": "american express",
+      "addr1": 425,
+      "addr2": 33,
+      "dist1": 2345.0,
+      "P_emaildomain": "anonymous.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "desktop",
+      "device_info": "MacOS",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 1.0,
+      "V3": 0.0,
+      "V4": 0.0,
+      "V5": 0.0,
+      "V6": 1.0,
+      "V7": 0.0,
+      "V8": 0.0,
+      "V9": 0.0,
+      "V10": 1.0,
+      "V11": 0.0,
+      "V12": 0.0,
+      "V13": 1.0,
+      "V14": 0.1,
+      "V15": 1.0,
+      "V16": 43.0,
+      "V17": 3.0,
+      "V18": 1.0,
+      "V19": 0.0,
+      "V20": 1.0,
+      "fraud_probability": 0.92,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 1.0,
+            "contribution": 1.0583
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 1850.0,
+            "contribution": 0.8572
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.6604
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.5249
+          },
+          {
+            "feature": "dist1",
+            "value": 2345.0,
+            "contribution": 0.508
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.1,
+            "contribution": 0.4233
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.3386
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.2117
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987044",
+      "TransactionDT": 16594828,
+      "TransactionAmt": 390.0,
+      "ProductCD": "C",
+      "card_type": "debit",
+      "card_network": "visa",
+      "addr1": 357,
+      "addr2": 71,
+      "dist1": 445.0,
+      "P_emaildomain": "yopmail.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "mobile",
+      "device_info": "iOS Device",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 0.0,
+      "V3": 0.0,
+      "V4": 0.0,
+      "V5": 1.0,
+      "V6": 0.0,
+      "V7": 0.0,
+      "V8": 0.0,
+      "V9": 1.0,
+      "V10": 0.0,
+      "V11": 0.0,
+      "V12": 0.0,
+      "V13": 2.0,
+      "V14": 0.15,
+      "V15": 0.0,
+      "V16": 44.0,
+      "V17": 4.0,
+      "V18": 0.0,
+      "V19": 0.0,
+      "V20": 0.0,
+      "fraud_probability": 0.76,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 1.0,
+            "contribution": 0.8835
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.5513
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 390.0,
+            "contribution": 0.4576
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.4382
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.15,
+            "contribution": 0.3534
+          },
+          {
+            "feature": "dist1",
+            "value": 445.0,
+            "contribution": 0.2907
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.1767
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 1.0,
+            "contribution": 0.1414
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987045",
+      "TransactionDT": 16681365,
+      "TransactionAmt": 2750.0,
+      "ProductCD": "W",
+      "card_type": "credit",
+      "card_network": "mastercard",
+      "addr1": 598,
+      "addr2": 24,
+      "dist1": 1890.0,
+      "P_emaildomain": "protonmail.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 0.0,
+      "V3": 0.0,
+      "V4": 1.0,
+      "V5": 0.0,
+      "V6": 0.0,
+      "V7": 0.0,
+      "V8": 1.0,
+      "V9": 0.0,
+      "V10": 0.0,
+      "V11": 0.0,
+      "V12": 1.0,
+      "V13": 0.0,
+      "V14": 0.05,
+      "V15": 1.0,
+      "V16": 45.0,
+      "V17": 0.0,
+      "V18": 1.0,
+      "V19": 1.0,
+      "V20": 1.0,
+      "fraud_probability": 0.98,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "TransactionAmt",
+            "value": 2750.0,
+            "contribution": 1.2834
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.6,
+            "contribution": 1.1657
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.8342
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.05,
+            "contribution": 0.7486
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.6631
+          },
+          {
+            "feature": "dist1",
+            "value": 1890.0,
+            "contribution": 0.6417
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.4278
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.2674
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987046",
+      "TransactionDT": 16681502,
+      "TransactionAmt": 720.0,
+      "ProductCD": "H",
+      "card_type": "debit",
+      "card_network": "visa",
+      "addr1": 226,
+      "addr2": 56,
+      "dist1": 1123.0,
+      "P_emaildomain": "guerrillamail.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "mobile",
+      "device_info": "Android",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 0.0,
+      "V3": 1.0,
+      "V4": 0.0,
+      "V5": 0.0,
+      "V6": 0.0,
+      "V7": 1.0,
+      "V8": 0.0,
+      "V9": 0.0,
+      "V10": 0.0,
+      "V11": 1.0,
+      "V12": 0.0,
+      "V13": 1.0,
+      "V14": 0.1,
+      "V15": 0.0,
+      "V16": 46.0,
+      "V17": 1.0,
+      "V18": 0.0,
+      "V19": 0.0,
+      "V20": 0.0,
+      "fraud_probability": 0.85,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 1.0,
+            "contribution": 0.9477
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.5913
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 720.0,
+            "contribution": 0.5534
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.47
+          },
+          {
+            "feature": "dist1",
+            "value": 1123.0,
+            "contribution": 0.4403
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.1,
+            "contribution": 0.3791
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.3033
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.1895
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987047",
+      "TransactionDT": 16768039,
+      "TransactionAmt": 1100.0,
+      "ProductCD": "C",
+      "card_type": "credit",
+      "card_network": "visa",
+      "addr1": 472,
+      "addr2": 37,
+      "dist1": 1567.0,
+      "P_emaildomain": "anonymous.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "desktop",
+      "device_info": "Windows",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 1.0,
+      "V3": 0.0,
+      "V4": 0.0,
+      "V5": 0.0,
+      "V6": 1.0,
+      "V7": 0.0,
+      "V8": 0.0,
+      "V9": 0.0,
+      "V10": 1.0,
+      "V11": 0.0,
+      "V12": 0.0,
+      "V13": 2.0,
+      "V14": 0.15,
+      "V15": 1.0,
+      "V16": 47.0,
+      "V17": 2.0,
+      "V18": 1.0,
+      "V19": 0.0,
+      "V20": 1.0,
+      "fraud_probability": 0.9,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 1.0,
+            "contribution": 1.0376
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 1100.0,
+            "contribution": 0.6848
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.6475
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.5147
+          },
+          {
+            "feature": "dist1",
+            "value": 1567.0,
+            "contribution": 0.4981
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.15,
+            "contribution": 0.415
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.332
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.2075
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987048",
+      "TransactionDT": 16768176,
+      "TransactionAmt": 945.0,
+      "ProductCD": "W",
+      "card_type": "debit",
+      "card_network": "mastercard",
+      "addr1": 309,
+      "addr2": 63,
+      "dist1": 678.0,
+      "P_emaildomain": "temp-mail.org",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "mobile",
+      "device_info": "iOS Device",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 1.0,
+      "V2": 0.0,
+      "V3": 0.0,
+      "V4": 0.0,
+      "V5": 1.0,
+      "V6": 0.0,
+      "V7": 0.0,
+      "V8": 0.0,
+      "V9": 1.0,
+      "V10": 0.0,
+      "V11": 0.0,
+      "V12": 1.0,
+      "V13": 0.0,
+      "V14": 0.05,
+      "V15": 0.0,
+      "V16": 48.0,
+      "V17": 3.0,
+      "V18": 0.0,
+      "V19": 0.0,
+      "V20": 0.0,
+      "fraud_probability": 0.81,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 1.0,
+            "contribution": 0.8876
+          },
+          {
+            "feature": "TransactionAmt",
+            "value": 945.0,
+            "contribution": 0.5583
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.5539
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.05,
+            "contribution": 0.4971
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.4403
+          },
+          {
+            "feature": "dist1",
+            "value": 678.0,
+            "contribution": 0.3334
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.1775
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 1.0,
+            "contribution": 0.142
+          }
+        ]
+      }
+    },
+    {
+      "TransactionID": "T_2987049",
+      "TransactionDT": 16854713,
+      "TransactionAmt": 3500.0,
+      "ProductCD": "C",
+      "card_type": "credit",
+      "card_network": "visa",
+      "addr1": 745,
+      "addr2": 9,
+      "dist1": 2890.0,
+      "P_emaildomain": "protonmail.com",
+      "R_emaildomain": "anonymous.com",
+      "device_type": "desktop",
+      "device_info": "Linux",
+      "M1": false,
+      "M2": false,
+      "M3": false,
+      "M4": "M0",
+      "M5": false,
+      "M6": false,
+      "M7": false,
+      "M8": false,
+      "M9": false,
+      "V1": 0.0,
+      "V2": 0.0,
+      "V3": 0.0,
+      "V4": 1.0,
+      "V5": 0.0,
+      "V6": 0.0,
+      "V7": 0.0,
+      "V8": 1.0,
+      "V9": 0.0,
+      "V10": 0.0,
+      "V11": 0.0,
+      "V12": 0.0,
+      "V13": 1.0,
+      "V14": 0.1,
+      "V15": 1.0,
+      "V16": 49.0,
+      "V17": 4.0,
+      "V18": 1.0,
+      "V19": 0.0,
+      "V20": 1.0,
+      "fraud_probability": 0.99,
+      "predicted_label": "fraud",
+      "shap": {
+        "base_value": -2.14,
+        "contributions": [
+          {
+            "feature": "TransactionAmt",
+            "value": 3500.0,
+            "contribution": 1.4857
+          },
+          {
+            "feature": "P_emaildomain_risk",
+            "value": 0.6,
+            "contribution": 1.3495
+          },
+          {
+            "feature": "M1_name_mismatch",
+            "value": 0.0,
+            "contribution": 0.9657
+          },
+          {
+            "feature": "M2_address_mismatch",
+            "value": 0.0,
+            "contribution": 0.7676
+          },
+          {
+            "feature": "dist1",
+            "value": 2890.0,
+            "contribution": 0.7428
+          },
+          {
+            "feature": "V14_amount_history",
+            "value": 0.1,
+            "contribution": 0.619
+          },
+          {
+            "feature": "V12_account_history",
+            "value": 0.0,
+            "contribution": 0.4952
+          },
+          {
+            "feature": "device_risk",
+            "value": 1.0,
+            "contribution": 0.3095
+          }
+        ]
+      }
+    }
+  ]
+}
