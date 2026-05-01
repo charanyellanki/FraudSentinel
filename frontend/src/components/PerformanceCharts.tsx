@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import {
   Area,
   AreaChart,
@@ -61,7 +62,7 @@ export function PerformanceCharts({ metrics }: { metrics: EvalMetrics }) {
   );
 }
 
-function ChartCard({ title, subtitle, children }: { title: string; subtitle: string; children: React.ReactNode }) {
+function ChartCard({ title, subtitle, children }: { title: string; subtitle: string; children: ReactNode }) {
   return (
     <div className="rounded-xl border border-zinc-200 bg-white">
       <div className="border-b border-zinc-100 px-5 py-4">
