@@ -9,8 +9,8 @@ export function ArchitectureDiagram() {
     <Section
       id="architecture"
       eyebrow="System architecture"
-      title="A confidence router decides who labels what."
-      description="Tabular model handles the easy 85–90% of decisions in milliseconds. The remaining 10–15% — transactions sitting inside the uncertainty band — are escalated to the LLM for a structured rationale before the final call."
+      title="A confidence router decides which providers a human reviews."
+      description="The tabular model auto-clears or auto-refers the easy 85–90% of providers in milliseconds. The remaining 10–15% — providers sitting inside the uncertainty band — are escalated to the LLM for a SHAP-grounded audit narrative before going to SIU review."
     >
       <div className="overflow-x-auto rounded-xl border border-zinc-200 bg-white p-6 sm:p-10">
         <svg
@@ -31,11 +31,11 @@ export function ArchitectureDiagram() {
             </marker>
           </defs>
 
-          {/* Node: Transaction */}
+          {/* Node: Provider */}
           <g>
             <rect x="20" y="150" width="130" height="60" rx="10" fill="#ffffff" stroke="#d4d4d8" />
-            <text x="85" y="178" textAnchor="middle" className="fill-zinc-900" fontSize="13" fontWeight="600">Transaction</text>
-            <text x="85" y="195" textAnchor="middle" className="fill-zinc-500" fontSize="10">400+ features</text>
+            <text x="85" y="178" textAnchor="middle" className="fill-zinc-900" fontSize="13" fontWeight="600">Provider</text>
+            <text x="85" y="195" textAnchor="middle" className="fill-zinc-500" fontSize="10">claim aggregates</text>
           </g>
 
           {/* Arrow → LightGBM */}
@@ -45,8 +45,8 @@ export function ArchitectureDiagram() {
           <g>
             <rect x="190" y="140" width="160" height="80" rx="10" fill="#fafafa" stroke="#a1a1aa" />
             <text x="270" y="168" textAnchor="middle" className="fill-zinc-900" fontSize="13" fontWeight="600">LightGBM</text>
-            <text x="270" y="184" textAnchor="middle" className="fill-zinc-500" fontSize="10">~1.2 ms p50</text>
-            <text x="270" y="200" textAnchor="middle" className="fill-zinc-500" fontSize="10">ROC-AUC 0.943</text>
+            <text x="270" y="184" textAnchor="middle" className="fill-zinc-500" fontSize="10">~0.9 ms p50</text>
+            <text x="270" y="200" textAnchor="middle" className="fill-zinc-500" fontSize="10">ROC-AUC 0.931</text>
           </g>
 
           {/* Arrow → Router */}
@@ -67,8 +67,8 @@ export function ArchitectureDiagram() {
           {/* Node: Direct Decision */}
           <g>
             <rect x="610" y="150" width="160" height="60" rx="10" fill="#ffffff" stroke="#d4d4d8" />
-            <text x="690" y="178" textAnchor="middle" className="fill-zinc-900" fontSize="13" fontWeight="600">Direct Decision</text>
-            <text x="690" y="195" textAnchor="middle" className="fill-zinc-500" fontSize="10">approve / decline</text>
+            <text x="690" y="178" textAnchor="middle" className="fill-zinc-900" fontSize="13" fontWeight="600">Direct decision</text>
+            <text x="690" y="195" textAnchor="middle" className="fill-zinc-500" fontSize="10">clear / investigate</text>
           </g>
 
           {/* Branch down: LLM */}
@@ -79,7 +79,7 @@ export function ArchitectureDiagram() {
           <g>
             <rect x="370" y="280" width="210" height="60" rx="10" fill="#fffbeb" stroke="#d97706" />
             <text x="475" y="307" textAnchor="middle" className="fill-amber-800" fontSize="13" fontWeight="600">Llama 3.1 8B + LoRA</text>
-            <text x="475" y="324" textAnchor="middle" className="fill-amber-700" fontSize="10">SHAP-grounded rationale</text>
+            <text x="475" y="324" textAnchor="middle" className="fill-amber-700" fontSize="10">SHAP-grounded audit narrative</text>
           </g>
 
           {/* LLM → Decision */}
@@ -91,14 +91,14 @@ export function ArchitectureDiagram() {
           {/* Node: Dashboard */}
           <g>
             <rect x="810" y="150" width="130" height="60" rx="10" fill="#eef2ff" stroke="#6366f1" />
-            <text x="875" y="178" textAnchor="middle" className="fill-accent-700" fontSize="13" fontWeight="600">Analyst</text>
+            <text x="875" y="178" textAnchor="middle" className="fill-accent-700" fontSize="13" fontWeight="600">SIU</text>
             <text x="875" y="195" textAnchor="middle" className="fill-accent-700" fontSize="13" fontWeight="600">Dashboard</text>
           </g>
 
           {/* Threshold annotations */}
           <g>
-            <text x="395" y="100" className="fill-zinc-600" fontSize="10" fontWeight="500">p &lt; 0.35 → approve</text>
-            <text x="395" y="115" className="fill-zinc-600" fontSize="10" fontWeight="500">p &gt; 0.65 → decline</text>
+            <text x="395" y="100" className="fill-zinc-600" fontSize="10" fontWeight="500">p &lt; 0.35 → clear</text>
+            <text x="395" y="115" className="fill-zinc-600" fontSize="10" fontWeight="500">p &gt; 0.65 → investigate</text>
           </g>
         </svg>
       </div>

@@ -1,16 +1,8 @@
 import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
-const PRODUCT_LABELS: Record<string, string> = {
-  W: "W · Web/physical",
-  C: "C · Card-not-present",
-  R: "R · Refund",
-  H: "H · Hotel/lodging",
-  S: "S · Services",
-};
-
-export function FairnessChart({ fnrByMerchant }: { fnrByMerchant: Record<string, number> }) {
-  const data = Object.entries(fnrByMerchant).map(([code, fnr]) => ({
-    category: PRODUCT_LABELS[code] ?? code,
+export function FairnessChart({ fnrByVolumeTier }: { fnrByVolumeTier: Record<string, number> }) {
+  const data = Object.entries(fnrByVolumeTier).map(([tier, fnr]) => ({
+    category: tier,
     fnr,
   }));
   const overall = data.reduce((acc, d) => acc + d.fnr, 0) / data.length;
@@ -19,10 +11,11 @@ export function FairnessChart({ fnrByMerchant }: { fnrByMerchant: Record<string,
   return (
     <div className="rounded-xl border border-zinc-200 bg-white">
       <div className="border-b border-zinc-100 px-5 py-4">
-        <h3 className="text-sm font-semibold tracking-tight2 text-zinc-900">FNR parity across merchant categories</h3>
+        <h3 className="text-sm font-semibold tracking-tight2 text-zinc-900">FNR parity across provider volume tiers</h3>
         <p className="mt-1 text-xs text-zinc-500">
-          False-negative rate by ProductCD. Mean {overall.toFixed(3)}, max deviation ±{maxDeviation.toFixed(3)}.
-          Disparities &gt; 0.05 absolute should trigger an investigation.
+          False-negative rate by provider claim-volume quintile. Mean {overall.toFixed(3)}, max deviation ±
+          {maxDeviation.toFixed(3)}. Disparities &gt; 0.05 absolute should trigger an investigation — missed FWA
+          should not concentrate in low-volume (easily overlooked) or high-volume (high-impact) providers.
         </p>
       </div>
       <div className="p-3">

@@ -2,7 +2,7 @@ import type { ShapExplanation } from "@/lib/types";
 
 /**
  * SHAP waterfall in log-odds space. Bars are colored red (positive
- * contribution → pushes toward fraud) or green (negative → pushes toward legit).
+ * contribution → pushes toward FWA) or green (negative → pushes toward clean).
  */
 export function ShapWaterfall({ shap }: { shap: ShapExplanation }) {
   const sorted = [...shap.contributions].sort((a, b) => Math.abs(b.contribution) - Math.abs(a.contribution));
@@ -53,11 +53,11 @@ export function ShapWaterfall({ shap }: { shap: ShapExplanation }) {
         <div className="mt-4 flex items-center gap-4 text-[10px] text-zinc-500">
           <span className="inline-flex items-center gap-1.5">
             <span className="inline-block h-2.5 w-2.5 rounded-sm bg-emerald-400" />
-            pushes toward legit
+            pushes toward clean
           </span>
           <span className="inline-flex items-center gap-1.5">
             <span className="inline-block h-2.5 w-2.5 rounded-sm bg-rose-400" />
-            pushes toward fraud
+            pushes toward FWA
           </span>
         </div>
       </div>

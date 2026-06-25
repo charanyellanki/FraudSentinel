@@ -1,7 +1,7 @@
 [project]
 name = "fraudsentinel-backend"
 version = "0.1.0"
-description = "FraudSentinel hybrid fraud detection API"
+description = "FraudSentinel hybrid healthcare provider FWA detection API"
 requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.111.0",

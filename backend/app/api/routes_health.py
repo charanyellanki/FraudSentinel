@@ -19,10 +19,11 @@ class HealthResponse(BaseModel):
 def health():
     """Liveness check. Reports fixture file presence for Render healthcheck."""
     fixture_paths = {
-        "demo_transactions": settings.demo_transactions_path,
+        "demo_providers": settings.demo_providers_path,
         "rationales": settings.rationales_path,
         "eval_metrics": settings.eval_metrics_path,
         "model_comparison": settings.model_comparison_path,
+        "llm_comparison": settings.llm_comparison_path,
         "drift_report": settings.drift_report_path,
     }
     return HealthResponse(

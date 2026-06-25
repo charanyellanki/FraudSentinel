@@ -1,18 +1,19 @@
 // Mirrors backend Pydantic schemas. Keep in sync with backend/app/schemas/.
 
-export type PredictedLabel = "legit" | "borderline" | "fraud";
-export type Decision = "approve" | "review" | "decline";
+export type PredictedLabel = "clean" | "borderline" | "fraud";
+export type Decision = "clear" | "review" | "investigate";
 export type RiskLevel = "low" | "medium" | "high";
-export type RoutingPath = "direct" | "llm_escalated";
+export type RoutingPath = "direct" | "siu_review";
 
-export interface DemoTransactionSummary {
-  transaction_id: string;
-  amount: number;
-  product_code: string;
-  card_type: string;
-  card_network: string;
-  p_emaildomain: string;
-  device_type: string;
+export interface ProviderSummary {
+  provider_id: string;
+  state: string;
+  total_claims: number;
+  total_reimbursed: number;
+  unique_beneficiaries: number;
+  avg_claim_amount: number;
+  inpatient_ratio: number;
+  volume_tier: string;
   fraud_probability: number;
   predicted_label: PredictedLabel;
 }
@@ -46,7 +47,7 @@ export interface RationaleResponse {
 }
 
 export interface PredictionResponse {
-  transaction_id: string;
+  provider_id: string;
   fraud_probability: number;
   decision: Decision;
   confidence: number;
@@ -81,7 +82,7 @@ export interface EvalMetrics {
   confusion_matrix: ConfusionMatrix;
   roc_curve: CurvePoint[];
   pr_curve: CurvePoint[];
-  fnr_by_merchant: Record<string, number>;
+  fnr_by_volume_tier: Record<string, number>;
 }
 
 export interface ModelEntry {
@@ -98,6 +99,28 @@ export interface ModelEntry {
 export interface ModelComparison {
   models: ModelEntry[];
   winner: string;
+  evaluation_date: string;
+}
+
+export interface LlmModelEntry {
+  name: string;
+  faithfulness: number;
+  factual_grounding: number;
+  signal_selection: number;
+  actionability: number;
+  p50_latency_ms: number;
+  p95_latency_ms: number;
+  cost_per_1k_usd: number;
+  deployment: string;
+  notes: string;
+}
+
+export interface LlmComparison {
+  models: LlmModelEntry[];
+  winner: string;
+  judge_model: string;
+  n_samples: number;
+  rubric_scale: string;
   evaluation_date: string;
 }
 

@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 app = FastAPI(
     title=settings.app_name,
     version=settings.app_version,
-    description="Hybrid tabular + LLM payment fraud detection API.",
+    description="Hybrid tabular + LLM healthcare provider fraud, waste & abuse (FWA) detection API.",
     docs_url="/docs",
     redoc_url="/redoc",
 )

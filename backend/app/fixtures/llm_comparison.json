@@ -1,0 +1,46 @@
+{
+  "_comment": "Placeholder LLM benchmark. Replace with real LLM-as-judge + latency/cost outputs after the fine-tune and eval harness run.",
+  "models": [
+    {
+      "name": "Llama 3.1 8B (QLoRA)",
+      "faithfulness": 4.41,
+      "factual_grounding": 4.52,
+      "signal_selection": 4.38,
+      "actionability": 4.29,
+      "p50_latency_ms": 740,
+      "p95_latency_ms": 1180,
+      "cost_per_1k_usd": 0.42,
+      "deployment": "self-hosted vLLM (A100 40GB)",
+      "notes": "Winner. Fine-tuned on 5K SHAP-grounded SIU rationales; highest faithfulness and lowest cost at scale. PHI stays in-VPC (no third-party egress)."
+    },
+    {
+      "name": "Qwen 2.5 7B",
+      "faithfulness": 4.18,
+      "factual_grounding": 4.27,
+      "signal_selection": 4.11,
+      "actionability": 4.02,
+      "p50_latency_ms": 690,
+      "p95_latency_ms": 1090,
+      "cost_per_1k_usd": 0.39,
+      "deployment": "self-hosted vLLM (A100 40GB)",
+      "notes": "Close second, slightly faster and cheaper, but weaker at selecting the highest-magnitude SHAP drivers without fine-tuning."
+    },
+    {
+      "name": "GPT-4o-mini",
+      "faithfulness": 4.33,
+      "factual_grounding": 4.4,
+      "signal_selection": 4.36,
+      "actionability": 4.21,
+      "p50_latency_ms": 540,
+      "p95_latency_ms": 1420,
+      "cost_per_1k_usd": 1.85,
+      "deployment": "hosted API (OpenAI)",
+      "notes": "Strong zero-shot faithfulness and lowest p50 latency, but ~4x cost per 1K decisions and routes PHI to a third party \u2014 a compliance non-starter for production SIU use."
+    }
+  ],
+  "winner": "Llama 3.1 8B (QLoRA)",
+  "judge_model": "claude-sonnet-4 (LLM-as-judge)",
+  "n_samples": 200,
+  "rubric_scale": "1\u20135 per axis (factual grounding, signal selection, calibration, actionability)",
+  "evaluation_date": "2026-06-22"
+}

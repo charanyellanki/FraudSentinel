@@ -9,7 +9,7 @@ export function RationaleDisplay({ rationale }: { rationale: RationaleResponse }
       <div className="flex items-start justify-between border-b border-amber-100 px-5 py-4">
         <div>
           <div className="text-[11px] font-medium uppercase tracking-wider text-amber-700">
-            LLM Rationale (escalated)
+            SIU audit narrative (escalated)
           </div>
           <div className="mt-1 flex items-center gap-2">
             <Badge tone={labelTone(rationale.risk_level)}>{rationale.risk_level} risk</Badge>

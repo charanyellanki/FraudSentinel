@@ -19,15 +19,15 @@ class Settings(BaseSettings):
 
     # Confidence router thresholds.
     # Placeholder values — empirically tuned after the cost-vs-escalation sweep.
-    router_low_threshold: float = 0.35  # p < this → direct approve
-    router_high_threshold: float = 0.65  # p > this → direct decline
+    router_low_threshold: float = 0.35  # p < this → auto-clear
+    router_high_threshold: float = 0.65  # p > this → auto-refer for investigation
 
     # Fixture paths
     fixtures_dir: Path = Path(__file__).parent / "fixtures"
 
     @property
-    def demo_transactions_path(self) -> Path:
-        return self.fixtures_dir / "demo_transactions.json"
+    def demo_providers_path(self) -> Path:
+        return self.fixtures_dir / "demo_providers.json"
 
     @property
     def rationales_path(self) -> Path:
@@ -40,6 +40,10 @@ class Settings(BaseSettings):
     @property
     def model_comparison_path(self) -> Path:
         return self.fixtures_dir / "model_comparison.json"
+
+    @property
+    def llm_comparison_path(self) -> Path:
+        return self.fixtures_dir / "llm_comparison.json"
 
     @property
     def drift_report_path(self) -> Path:

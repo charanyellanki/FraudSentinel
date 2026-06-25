@@ -2,10 +2,12 @@ from typing import Literal
 
 from pydantic import BaseModel, Field
 
+Decision = Literal["clear", "review", "investigate"]
+
 
 class ShapContribution(BaseModel):
     feature: str
-    value: float = Field(..., description="Raw feature value for display")
+    value: float = Field(..., description="Raw provider-level feature value for display")
     contribution: float = Field(..., description="SHAP contribution in log-odds space")
 
 
@@ -21,14 +23,14 @@ class ShapExplanation(BaseModel):
 class RationaleResponse(BaseModel):
     risk_level: Literal["low", "medium", "high"]
     key_signals: list[str] = Field(..., description="2–5 bullet-point signals driving the call")
-    rationale: str = Field(..., description="2–5 sentence analyst-style narrative")
-    recommended_action: Literal["approve", "review", "decline"]
+    rationale: str = Field(..., description="2–5 sentence SIU investigator-style narrative")
+    recommended_action: Decision
     confidence: float = Field(..., ge=0.0, le=1.0)
     generated_by: str = Field(default="llama-3.1-8b-lora-v0.1")
 
 
 class RoutingDecision(BaseModel):
-    path: Literal["direct", "llm_escalated"]
+    path: Literal["direct", "siu_review"]
     reason: str
     probability: float
     low_threshold: float
@@ -36,18 +38,18 @@ class RoutingDecision(BaseModel):
 
 
 class PredictionResponse(BaseModel):
-    transaction_id: str
+    provider_id: str
     fraud_probability: float = Field(..., ge=0.0, le=1.0)
-    decision: Literal["approve", "review", "decline"]
+    decision: Decision
     confidence: float = Field(..., ge=0.0, le=1.0)
     routing: RoutingDecision
     shap: ShapExplanation
     rationale: RationaleResponse | None = Field(
-        None, description="Present only when LLM was called"
+        None, description="Present only when the case was escalated to SIU review"
     )
-    model_version: str = Field(default="lightgbm-v0.1-fixture")
+    model_version: str = Field(default="lightgbm-fwa-v0.1-fixture")
     latency_ms: float
 
 
 class PredictRequest(BaseModel):
-    transaction_id: str
+    provider_id: str

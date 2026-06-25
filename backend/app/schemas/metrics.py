@@ -30,8 +30,8 @@ class EvalMetrics(BaseModel):
     confusion_matrix: ConfusionMatrix
     roc_curve: list[CurvePoint]
     pr_curve: list[CurvePoint]
-    fnr_by_merchant: dict[str, float] = Field(
-        ..., description="FNR broken down by ProductCD merchant category"
+    fnr_by_volume_tier: dict[str, float] = Field(
+        ..., description="FNR broken down by provider claim-volume tier (quintile)"
     )
 
     model_config = {"populate_by_name": True}
@@ -50,11 +50,40 @@ class ModelEntry(BaseModel):
 
 class ModelComparison(BaseModel):
     """
-    Placeholder benchmark results. Replace after real training runs.
+    Placeholder tabular benchmark results. Replace after real training runs.
     """
 
     models: list[ModelEntry]
     winner: str
+    evaluation_date: str
+
+
+class LlmModelEntry(BaseModel):
+    """One candidate rationale model in the LLM benchmark."""
+
+    name: str
+    faithfulness: float = Field(..., description="LLM-as-judge overall mean, 1–5 scale")
+    factual_grounding: float
+    signal_selection: float
+    actionability: float
+    p50_latency_ms: float
+    p95_latency_ms: float
+    cost_per_1k_usd: float = Field(..., description="USD per 1,000 generated decisions")
+    deployment: str
+    notes: str
+
+
+class LlmComparison(BaseModel):
+    """
+    Placeholder LLM benchmark: the fine-tuned Llama 3.1 8B against Qwen 2.5 7B
+    and GPT-4o-mini on rationale faithfulness, latency, and cost.
+    """
+
+    models: list[LlmModelEntry]
+    winner: str
+    judge_model: str
+    n_samples: int
+    rubric_scale: str
     evaluation_date: str
 
 

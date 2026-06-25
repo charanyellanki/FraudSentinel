@@ -1,9 +1,10 @@
 import type {
-  DemoTransactionSummary,
   DriftReport,
   EvalMetrics,
+  LlmComparison,
   ModelComparison,
   PredictionResponse,
+  ProviderSummary,
 } from "./types";
 
 const BASE_URL = (import.meta.env.VITE_API_URL as string | undefined) ?? "";
@@ -35,14 +36,15 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 
 export const api = {
   health: () => request<{ status: string; version: string; fixtures: Record<string, boolean> }>("/health"),
-  getDemoTransactions: () => request<DemoTransactionSummary[]>("/api/demo-transactions"),
-  predict: (transactionId: string) =>
+  getDemoProviders: () => request<ProviderSummary[]>("/api/demo-providers"),
+  predict: (providerId: string) =>
     request<PredictionResponse>("/api/predict", {
       method: "POST",
-      body: JSON.stringify({ transaction_id: transactionId }),
+      body: JSON.stringify({ provider_id: providerId }),
     }),
   getMetrics: () => request<EvalMetrics>("/api/metrics"),
   getModelComparison: () => request<ModelComparison>("/api/model-comparison"),
+  getLlmComparison: () => request<LlmComparison>("/api/llm-comparison"),
   getDrift: () => request<DriftReport>("/api/drift"),
 };
 

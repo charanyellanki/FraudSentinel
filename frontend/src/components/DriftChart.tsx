@@ -7,7 +7,7 @@ import type { DriftReport } from "@/lib/types";
 import { Badge } from "./ui/Badge";
 
 export function DriftChart({ drift }: { drift: DriftReport }) {
-  const [selectedFeature, setSelectedFeature] = useState<string>("TransactionAmt");
+  const [selectedFeature, setSelectedFeature] = useState<string>("reimbursed_per_beneficiary");
 
   const overallSeries = useMemo(
     () =>

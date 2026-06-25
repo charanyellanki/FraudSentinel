@@ -5,12 +5,13 @@ import { ConfidenceRouterViz } from "./components/ConfidenceRouterViz";
 import { DriftChart } from "./components/DriftChart";
 import { FairnessChart } from "./components/FairnessChart";
 import { Hero } from "./components/Hero";
+import { LlmComparisonTable } from "./components/LlmComparisonTable";
 import { ModelComparisonTable } from "./components/ModelComparisonTable";
 import { PerformanceCharts } from "./components/PerformanceCharts";
 import { PredictionCard } from "./components/PredictionCard";
+import { ProviderPicker } from "./components/ProviderPicker";
 import { RationaleDisplay } from "./components/RationaleDisplay";
 import { ShapWaterfall } from "./components/ShapWaterfall";
-import { TransactionPicker } from "./components/TransactionPicker";
 import { ErrorNotice, Skeleton, WarmingNotice } from "./components/ui/Skeleton";
 import { Section } from "./components/ui/Section";
 import { useApi } from "./hooks/useApi";
@@ -18,9 +19,10 @@ import { api } from "./lib/api";
 import type { PredictionResponse } from "./lib/types";
 
 export default function App() {
-  const transactionsState = useApi(() => api.getDemoTransactions(), []);
+  const providersState = useApi(() => api.getDemoProviders(), []);
   const metricsState = useApi(() => api.getMetrics(), []);
   const comparisonState = useApi(() => api.getModelComparison(), []);
+  const llmComparisonState = useApi(() => api.getLlmComparison(), []);
   const driftState = useApi(() => api.getDrift(), []);
 
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -28,13 +30,13 @@ export default function App() {
   const [predicting, setPredicting] = useState(false);
   const [predictError, setPredictError] = useState<Error | null>(null);
 
-  // Auto-select the first borderline transaction once data loads — this is the
-  // most demonstrative case (LLM gets escalated).
+  // Auto-select the first borderline provider once data loads — this is the
+  // most demonstrative case (escalated to SIU with an LLM narrative).
   useEffect(() => {
-    if (selectedId || !transactionsState.data) return;
-    const firstBorderline = transactionsState.data.find((tx) => tx.predicted_label === "borderline");
-    if (firstBorderline) setSelectedId(firstBorderline.transaction_id);
-  }, [transactionsState.data, selectedId]);
+    if (selectedId || !providersState.data) return;
+    const firstBorderline = providersState.data.find((p) => p.predicted_label === "borderline");
+    if (firstBorderline) setSelectedId(firstBorderline.provider_id);
+  }, [providersState.data, selectedId]);
 
   useEffect(() => {
     if (!selectedId) return;
@@ -56,19 +58,19 @@ export default function App() {
         <Section
           id="live-prediction"
           eyebrow="Live prediction"
-          title="Pick a transaction. Watch the router decide who handles it."
+          title="Pick a provider. Watch the router decide who reviews it."
           description="Cached fixture data for now — the API contract and routing logic are real, the LightGBM model and Llama LoRA are in progress. The dashboard will hot-swap to live model outputs once training completes."
         >
           <div className="grid gap-6 lg:grid-cols-12">
             <div className="lg:col-span-5">
-              {transactionsState.warming && <div className="mb-3"><WarmingNotice /></div>}
-              {transactionsState.error ? (
-                <ErrorNotice error={transactionsState.error} />
-              ) : transactionsState.loading || !transactionsState.data ? (
+              {providersState.warming && <div className="mb-3"><WarmingNotice /></div>}
+              {providersState.error ? (
+                <ErrorNotice error={providersState.error} />
+              ) : providersState.loading || !providersState.data ? (
                 <Skeleton className="h-[420px] w-full" />
               ) : (
-                <TransactionPicker
-                  transactions={transactionsState.data}
+                <ProviderPicker
+                  providers={providersState.data}
                   selectedId={selectedId}
                   onSelect={setSelectedId}
                 />
@@ -98,9 +100,9 @@ export default function App() {
 
         <Section
           id="model-comparison"
-          eyebrow="Benchmarks"
+          eyebrow="Tabular benchmarks"
           title="Why LightGBM."
-          description="Four candidate models trained on the IEEE-CIS dataset with identical preprocessing. Selection criteria: ROC-AUC ≥ 0.94 and inference latency p95 < 5ms."
+          description="Four candidate models trained on the provider-aggregated feature set with identical preprocessing. Selection criteria: best ROC-AUC and inference latency p95 < 5ms."
         >
           {comparisonState.error ? (
             <ErrorNotice error={comparisonState.error} />
@@ -112,10 +114,25 @@ export default function App() {
         </Section>
 
         <Section
+          id="llm-comparison"
+          eyebrow="LLM benchmarks"
+          title="Why fine-tuned Llama 3.1 8B for the narrative."
+          description="The escalation narrative model was chosen against Qwen 2.5 7B and GPT-4o-mini on rationale faithfulness (LLM-as-judge), latency, and cost per 1,000 decisions. The fine-tuned Llama wins on faithfulness and unit cost while keeping PHI in-VPC — a hard requirement for production SIU use."
+        >
+          {llmComparisonState.error ? (
+            <ErrorNotice error={llmComparisonState.error} />
+          ) : llmComparisonState.loading || !llmComparisonState.data ? (
+            <Skeleton className="h-64 w-full" />
+          ) : (
+            <LlmComparisonTable comparison={llmComparisonState.data} />
+          )}
+        </Section>
+
+        <Section
           id="performance"
           eyebrow="Performance"
           title="Held-out evaluation."
-          description={`Evaluated on a stratified 10% test split. Operating threshold tuned for ${"precision@recall=0.8"}.`}
+          description={`Evaluated on a stratified held-out provider split. Operating threshold tuned for ${"precision@recall=0.8"}.`}
         >
           {metricsState.error ? (
             <ErrorNotice error={metricsState.error} />
@@ -133,15 +150,15 @@ export default function App() {
         <Section
           id="fairness"
           eyebrow="Fairness"
-          title="False-negative parity across merchant categories."
-          description="A high-AUC model can still systematically miss fraud in specific verticals. We monitor false-negative rate by ProductCD and treat any sub-segment with FNR > overall + 0.05 as a deployment blocker."
+          title="False-negative parity across provider volume tiers."
+          description="A high-AUC model can still systematically miss FWA among specific provider segments. We monitor false-negative rate by claim-volume quintile and treat any tier with FNR > overall + 0.05 as a deployment blocker."
         >
           {metricsState.error ? (
             <ErrorNotice error={metricsState.error} />
           ) : metricsState.loading || !metricsState.data ? (
             <Skeleton className="h-72 w-full" />
           ) : (
-            <FairnessChart fnrByMerchant={metricsState.data.fnr_by_merchant} />
+            <FairnessChart fnrByVolumeTier={metricsState.data.fnr_by_volume_tier} />
           )}
         </Section>
 
@@ -149,7 +166,7 @@ export default function App() {
           id="drift"
           eyebrow="Monitoring"
           title="Population drift over time."
-          description="PSI and KS p-values for the top-20 features across 4 successive deployment windows, all compared to the training reference window. Triggers retraining when overall PSI exceeds 0.20."
+          description="PSI and KS p-values for the top-20 provider features across 4 successive deployment windows, all compared to the training reference window. Triggers retraining when overall PSI exceeds 0.20."
         >
           {driftState.error ? (
             <ErrorNotice error={driftState.error} />

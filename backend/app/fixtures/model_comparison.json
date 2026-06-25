@@ -3,45 +3,45 @@
   "models": [
     {
       "name": "LightGBM",
-      "roc_auc": 0.9431,
-      "pr_auc": 0.7218,
-      "f1": 0.7456,
-      "train_time_s": 44.7,
-      "inference_p50_ms": 1.2,
-      "inference_p95_ms": 2.8,
-      "notes": "Winner. Best ROC-AUC and fastest inference. Tuned with 500 estimators, max_depth=7, num_leaves=63."
+      "roc_auc": 0.9312,
+      "pr_auc": 0.6534,
+      "f1": 0.5647,
+      "train_time_s": 38.2,
+      "inference_p50_ms": 0.9,
+      "inference_p95_ms": 2.3,
+      "notes": "Winner. Best ROC-AUC and fastest inference on the provider-aggregated feature set. 600 estimators, num_leaves=63, max_depth=7."
     },
     {
       "name": "XGBoost",
-      "roc_auc": 0.9387,
-      "pr_auc": 0.7091,
-      "f1": 0.7312,
-      "train_time_s": 181.3,
-      "inference_p50_ms": 3.1,
-      "inference_p95_ms": 6.4,
-      "notes": "Strong runner-up. ROC-AUC within 0.005 of LightGBM but ~4x slower training and ~2.5x slower inference. Tuned with 500 estimators, max_depth=6, eta=0.05."
+      "roc_auc": 0.9268,
+      "pr_auc": 0.6411,
+      "f1": 0.5519,
+      "train_time_s": 152.7,
+      "inference_p50_ms": 2.7,
+      "inference_p95_ms": 5.9,
+      "notes": "Strong runner-up. ROC-AUC within 0.005 of LightGBM but ~4x slower training and ~2.5x slower inference. 600 estimators, max_depth=6, eta=0.05."
     },
     {
       "name": "CatBoost",
-      "roc_auc": 0.9364,
-      "pr_auc": 0.7043,
-      "f1": 0.7278,
-      "train_time_s": 118.6,
-      "inference_p50_ms": 2.8,
-      "inference_p95_ms": 5.7,
-      "notes": "Competitive with XGBoost. Handles categorical features natively (card_type, ProductCD, device_type) without preprocessing. 1000 iterations, depth=6."
+      "roc_auc": 0.9241,
+      "pr_auc": 0.6388,
+      "f1": 0.5472,
+      "train_time_s": 104.5,
+      "inference_p50_ms": 2.5,
+      "inference_p95_ms": 5.2,
+      "notes": "Competitive with XGBoost. Handles categorical provider attributes (state, specialty proxy) natively. 1000 iterations, depth=6."
     },
     {
       "name": "Logistic Regression",
-      "roc_auc": 0.8412,
-      "pr_auc": 0.5234,
-      "f1": 0.6187,
-      "train_time_s": 7.9,
-      "inference_p50_ms": 0.4,
-      "inference_p95_ms": 0.9,
-      "notes": "Baseline. Significantly weaker on ROC-AUC (~0.10 gap) and PR-AUC. Fast training and near-zero inference latency. L2 regularization, C=0.01, scaled features."
+      "roc_auc": 0.8377,
+      "pr_auc": 0.4612,
+      "f1": 0.4318,
+      "train_time_s": 5.4,
+      "inference_p50_ms": 0.3,
+      "inference_p95_ms": 0.7,
+      "notes": "Baseline. ~0.09 ROC-AUC gap and far weaker PR-AUC on this imbalanced, non-linear feature set. L2, C=0.01, scaled features."
     }
   ],
   "winner": "LightGBM",
-  "evaluation_date": "2025-05-01"
+  "evaluation_date": "2026-06-22"
 }

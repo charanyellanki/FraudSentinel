@@ -80,7 +80,7 @@ function KeyStats({ metrics }: { metrics: EvalMetrics }) {
     <div className="rounded-xl border border-zinc-200 bg-white lg:col-span-2">
       <div className="border-b border-zinc-100 px-5 py-4">
         <h3 className="text-sm font-semibold tracking-tight2 text-zinc-900">Key metrics @ operating threshold</h3>
-        <p className="mt-0.5 text-xs text-zinc-500">Threshold {metrics.threshold} · Held-out test set ({(cm.tp + cm.fp + cm.tn + cm.fn).toLocaleString()} txs)</p>
+        <p className="mt-0.5 text-xs text-zinc-500">Threshold {metrics.threshold} · Held-out test set ({(cm.tp + cm.fp + cm.tn + cm.fn).toLocaleString()} providers)</p>
       </div>
       <div className="grid grid-cols-2 gap-px bg-zinc-100 sm:grid-cols-6">
         <KV label="ROC-AUC" value={metrics.roc_auc.toFixed(4)} />

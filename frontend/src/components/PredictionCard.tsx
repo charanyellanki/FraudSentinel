@@ -24,7 +24,7 @@ export function PredictionCard({ prediction }: { prediction: PredictionResponse 
         </div>
         <div className="text-right">
           <div className="text-[11px] font-medium uppercase tracking-wider text-zinc-500">
-            Fraud probability
+            FWA likelihood
           </div>
           <div className="mt-1 font-mono text-2xl font-semibold tracking-tight text-zinc-900">
             {pct}%

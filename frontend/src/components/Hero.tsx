@@ -4,15 +4,16 @@ export function Hero() {
       <div className="mx-auto max-w-6xl px-6 py-20 sm:py-28">
         <div className="flex items-center gap-2 text-xs font-medium text-accent-700">
           <span className="inline-flex h-1.5 w-1.5 animate-pulse rounded-full bg-accent-500" />
-          Hybrid tabular + LLM fraud detection
+          Hybrid tabular + LLM healthcare FWA detection
         </div>
         <h1 className="mt-4 max-w-3xl text-balance text-4xl font-semibold tracking-tight2 text-zinc-900 sm:text-5xl">
-          A LightGBM scorer with a Llama 3.1 second opinion — only when it matters.
+          A LightGBM provider scorer with a Llama 3.1 second opinion — only when it matters.
         </h1>
         <p className="mt-5 max-w-2xl text-pretty text-base text-zinc-600 sm:text-lg">
-          FraudSentinel scores transactions in &lt;5ms with LightGBM. Borderline cases inside the
-          uncertainty band are escalated to a QLoRA-fine-tuned Llama 3.1 8B that produces a
-          SHAP-grounded analyst rationale. Built on the IEEE-CIS dataset (~590K transactions).
+          FraudSentinel scores Medicare providers for fraud, waste &amp; abuse in &lt;3ms with LightGBM.
+          Borderline providers inside the uncertainty band are escalated to a QLoRA-fine-tuned Llama 3.1 8B
+          that turns SHAP attributions into an investigator-ready audit narrative for SIU review. Built on the
+          CMS / Kaggle Healthcare Provider Fraud dataset.
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-3 text-xs">
           <a
@@ -34,8 +35,8 @@ export function Hero() {
           {[
             ["Tabular model", "LightGBM"],
             ["LLM rationale", "Llama 3.1 8B + LoRA"],
-            ["Dataset", "IEEE-CIS (~590K)"],
-            ["Routing", "Confidence-band"],
+            ["Domain", "Medicare provider FWA"],
+            ["Routing", "Confidence → SIU"],
           ].map(([label, value]) => (
             <div key={label} className="border-l border-zinc-200 pl-4">
               <dt className="text-[11px] font-medium uppercase tracking-wider text-zinc-500">{label}</dt>

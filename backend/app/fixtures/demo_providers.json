@@ -1,0 +1,2855 @@
+{
+ "_comment": "50 frozen demo providers with provider-level FWA features, fraud likelihood, and LightGBM TreeExplainer SHAP attributions. Derived from the CMS/Kaggle Healthcare Provider Fraud Detection dataset schema.",
+ "providers": [
+  {
+   "provider_id": "PRV51001",
+   "state": "TX",
+   "total_claims": 662,
+   "total_reimbursed": 501134,
+   "unique_beneficiaries": 376,
+   "avg_claim_amount": 757,
+   "inpatient_ratio": 0.136,
+   "volume_tier": "Q1 (lowest)",
+   "fraud_probability": 0.111,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 171,
+      "contribution": 0.1691
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.465,
+      "contribution": 0.0992
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 538,
+      "contribution": -0.0572
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.889,
+      "contribution": 0.0568
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 53,
+      "contribution": -0.048
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 17373,
+      "contribution": 0.0462
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 1.62,
+      "contribution": -0.0434
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 6,
+      "contribution": -0.0033
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51002",
+   "state": "TX",
+   "total_claims": 802,
+   "total_reimbursed": 839694,
+   "unique_beneficiaries": 495,
+   "avg_claim_amount": 1047,
+   "inpatient_ratio": 0.192,
+   "volume_tier": "Q2",
+   "fraud_probability": 0.183,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.841,
+      "contribution": 0.163
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 5.47,
+      "contribution": 0.1483
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 16.8,
+      "contribution": 0.1326
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 544,
+      "contribution": 0.13
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 492,
+      "contribution": 0.1064
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.686,
+      "contribution": 0.071
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.151,
+      "contribution": 0.0526
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 63,
+      "contribution": 0.0
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51003",
+   "state": "GA",
+   "total_claims": 1357,
+   "total_reimbursed": 546871,
+   "unique_beneficiaries": 935,
+   "avg_claim_amount": 403,
+   "inpatient_ratio": 0.078,
+   "volume_tier": "Q2",
+   "fraud_probability": 0.234,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "n_claims",
+      "value": 8215,
+      "contribution": 0.2346
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 63,
+      "contribution": 0.2322
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 6707,
+      "contribution": 0.2226
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 13.0,
+      "contribution": 0.1499
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.042,
+      "contribution": 0.1291
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.574,
+      "contribution": 0.1055
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 7.67,
+      "contribution": 0.1018
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.001,
+      "contribution": -0.0616
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51004",
+   "state": "NC",
+   "total_claims": 401,
+   "total_reimbursed": 266665,
+   "unique_beneficiaries": 193,
+   "avg_claim_amount": 665,
+   "inpatient_ratio": 0.19,
+   "volume_tier": "Q1 (lowest)",
+   "fraud_probability": 0.043,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.768,
+      "contribution": -0.2321
+     },
+     {
+      "feature": "n_claims",
+      "value": 680,
+      "contribution": -0.2177
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 1763,
+      "contribution": -0.2035
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 1.96,
+      "contribution": -0.1485
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 714,
+      "contribution": -0.0782
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 7.1,
+      "contribution": 0.0654
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.125,
+      "contribution": 0.0505
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.077,
+      "contribution": -0.0385
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51005",
+   "state": "PA",
+   "total_claims": 2161,
+   "total_reimbursed": 1186389,
+   "unique_beneficiaries": 1612,
+   "avg_claim_amount": 549,
+   "inpatient_ratio": 0.15,
+   "volume_tier": "Q3",
+   "fraud_probability": 0.13,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 597,
+      "contribution": 0.2276
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 77,
+      "contribution": 0.1601
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.505,
+      "contribution": 0.0655
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 1229,
+      "contribution": -0.0429
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 5.41,
+      "contribution": 0.0386
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 35,
+      "contribution": -0.0281
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 518,
+      "contribution": -0.0147
+     },
+     {
+      "feature": "n_claims",
+      "value": 393,
+      "contribution": -0.0072
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51006",
+   "state": "OH",
+   "total_claims": 1821,
+   "total_reimbursed": 1624332,
+   "unique_beneficiaries": 1273,
+   "avg_claim_amount": 892,
+   "inpatient_ratio": 0.104,
+   "volume_tier": "Q2",
+   "fraud_probability": 0.154,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.741,
+      "contribution": 0.2123
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 445,
+      "contribution": 0.2095
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.676,
+      "contribution": 0.1167
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 27,
+      "contribution": -0.0788
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 103,
+      "contribution": 0.067
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 5.78,
+      "contribution": 0.0517
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 7874,
+      "contribution": 0.0188
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.007,
+      "contribution": -0.0007
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51007",
+   "state": "OH",
+   "total_claims": 996,
+   "total_reimbursed": 679272,
+   "unique_beneficiaries": 721,
+   "avg_claim_amount": 682,
+   "inpatient_ratio": 0.158,
+   "volume_tier": "Q2",
+   "fraud_probability": 0.225,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "unique_procedure_codes",
+      "value": 40,
+      "contribution": 0.3275
+     },
+     {
+      "feature": "n_claims",
+      "value": 17987,
+      "contribution": 0.3232
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.03,
+      "contribution": 0.1593
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 444,
+      "contribution": 0.1347
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.189,
+      "contribution": 0.1307
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 17.9,
+      "contribution": 0.0538
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 1.69,
+      "contribution": -0.0458
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.186,
+      "contribution": -0.0201
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51008",
+   "state": "PA",
+   "total_claims": 977,
+   "total_reimbursed": 938897,
+   "unique_beneficiaries": 692,
+   "avg_claim_amount": 961,
+   "inpatient_ratio": 0.05,
+   "volume_tier": "Q2",
+   "fraud_probability": 0.044,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 892,
+      "contribution": -0.1836
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.001,
+      "contribution": -0.1483
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 2.1,
+      "contribution": -0.1285
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.891,
+      "contribution": -0.1023
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 2074,
+      "contribution": -0.0915
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 3.0,
+      "contribution": -0.0609
+     },
+     {
+      "feature": "n_claims",
+      "value": 334,
+      "contribution": -0.0445
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 1.23,
+      "contribution": -0.0191
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51009",
+   "state": "NC",
+   "total_claims": 2303,
+   "total_reimbursed": 1669675,
+   "unique_beneficiaries": 1370,
+   "avg_claim_amount": 725,
+   "inpatient_ratio": 0.155,
+   "volume_tier": "Q3",
+   "fraud_probability": 0.16,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 4.32,
+      "contribution": 0.1899
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 225,
+      "contribution": 0.1757
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.194,
+      "contribution": 0.1646
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 15312,
+      "contribution": 0.1525
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 385,
+      "contribution": -0.1056
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 204,
+      "contribution": 0.0768
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.093,
+      "contribution": -0.0495
+     },
+     {
+      "feature": "n_claims",
+      "value": 25908,
+      "contribution": 0.0373
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51010",
+   "state": "TX",
+   "total_claims": 1787,
+   "total_reimbursed": 1168698,
+   "unique_beneficiaries": 1407,
+   "avg_claim_amount": 654,
+   "inpatient_ratio": 0.048,
+   "volume_tier": "Q2",
+   "fraud_probability": 0.036,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 37,
+      "contribution": -0.2359
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 1.83,
+      "contribution": -0.2254
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.139,
+      "contribution": -0.205
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 5,
+      "contribution": -0.1263
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.117,
+      "contribution": -0.0941
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 55,
+      "contribution": -0.0882
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 826,
+      "contribution": -0.057
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 6.38,
+      "contribution": 0.0443
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51011",
+   "state": "TX",
+   "total_claims": 254,
+   "total_reimbursed": 154178,
+   "unique_beneficiaries": 147,
+   "avg_claim_amount": 607,
+   "inpatient_ratio": 0.059,
+   "volume_tier": "Q1 (lowest)",
+   "fraud_probability": 0.08,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "unique_procedure_codes",
+      "value": 7,
+      "contribution": -0.1397
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 1.18,
+      "contribution": -0.1173
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 1.8,
+      "contribution": -0.0924
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.56,
+      "contribution": 0.0857
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 362,
+      "contribution": 0.0612
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.115,
+      "contribution": 0.0492
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.142,
+      "contribution": 0.0338
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 40,
+      "contribution": -0.0228
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51012",
+   "state": "TX",
+   "total_claims": 1247,
+   "total_reimbursed": 457649,
+   "unique_beneficiaries": 605,
+   "avg_claim_amount": 367,
+   "inpatient_ratio": 0.013,
+   "volume_tier": "Q2",
+   "fraud_probability": 0.052,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 1.18,
+      "contribution": -0.1432
+     },
+     {
+      "feature": "n_claims",
+      "value": 550,
+      "contribution": -0.1409
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.958,
+      "contribution": -0.1359
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 829,
+      "contribution": -0.0947
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.024,
+      "contribution": -0.0944
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.099,
+      "contribution": -0.0518
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 9.4,
+      "contribution": 0.0495
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 6.12,
+      "contribution": 0.0083
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51013",
+   "state": "IL",
+   "total_claims": 2124,
+   "total_reimbursed": 1055628,
+   "unique_beneficiaries": 1287,
+   "avg_claim_amount": 497,
+   "inpatient_ratio": 0.132,
+   "volume_tier": "Q3",
+   "fraud_probability": 0.147,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 9598,
+      "contribution": 0.2156
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 235,
+      "contribution": 0.1023
+     },
+     {
+      "feature": "n_claims",
+      "value": 4654,
+      "contribution": 0.0711
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 9005,
+      "contribution": 0.0554
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.698,
+      "contribution": 0.0462
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 3.58,
+      "contribution": 0.0426
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 9.3,
+      "contribution": 0.0136
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.739,
+      "contribution": -0.005
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51014",
+   "state": "PA",
+   "total_claims": 365,
+   "total_reimbursed": 243820,
+   "unique_beneficiaries": 268,
+   "avg_claim_amount": 668,
+   "inpatient_ratio": 0.089,
+   "volume_tier": "Q1 (lowest)",
+   "fraud_probability": 0.204,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 8987,
+      "contribution": 0.2826
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.712,
+      "contribution": 0.2354
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.621,
+      "contribution": 0.2046
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 11169,
+      "contribution": 0.146
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 378,
+      "contribution": 0.145
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 59,
+      "contribution": -0.132
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 88,
+      "contribution": 0.0714
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 1.15,
+      "contribution": -0.0144
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51015",
+   "state": "PA",
+   "total_claims": 1775,
+   "total_reimbursed": 1617025,
+   "unique_beneficiaries": 924,
+   "avg_claim_amount": 911,
+   "inpatient_ratio": 0.099,
+   "volume_tier": "Q2",
+   "fraud_probability": 0.122,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.438,
+      "contribution": 0.1789
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.225,
+      "contribution": 0.1598
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 320,
+      "contribution": 0.1177
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 2.92,
+      "contribution": -0.0568
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.088,
+      "contribution": -0.0539
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 1.4,
+      "contribution": -0.0356
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 327,
+      "contribution": 0.034
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 10,
+      "contribution": -0.0177
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51016",
+   "state": "CA",
+   "total_claims": 257,
+   "total_reimbursed": 205857,
+   "unique_beneficiaries": 136,
+   "avg_claim_amount": 801,
+   "inpatient_ratio": 0.098,
+   "volume_tier": "Q1 (lowest)",
+   "fraud_probability": 0.223,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "n_claims",
+      "value": 34090,
+      "contribution": 0.2225
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 5.12,
+      "contribution": 0.2052
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.103,
+      "contribution": 0.2016
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 11.7,
+      "contribution": 0.1772
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.026,
+      "contribution": 0.1063
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 95,
+      "contribution": 0.0745
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 12702,
+      "contribution": 0.0688
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.084,
+      "contribution": -0.0044
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51017",
+   "state": "GA",
+   "total_claims": 1426,
+   "total_reimbursed": 1136522,
+   "unique_beneficiaries": 1072,
+   "avg_claim_amount": 797,
+   "inpatient_ratio": 0.096,
+   "volume_tier": "Q2",
+   "fraud_probability": 0.148,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 5986,
+      "contribution": 0.1673
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.012,
+      "contribution": 0.1665
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.235,
+      "contribution": 0.1415
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 8379,
+      "contribution": 0.1092
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 6.8,
+      "contribution": 0.0637
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.098,
+      "contribution": -0.0528
+     },
+     {
+      "feature": "n_claims",
+      "value": 1023,
+      "contribution": -0.0505
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 10.7,
+      "contribution": 0.0048
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51018",
+   "state": "TX",
+   "total_claims": 1652,
+   "total_reimbursed": 670712,
+   "unique_beneficiaries": 817,
+   "avg_claim_amount": 406,
+   "inpatient_ratio": 0.102,
+   "volume_tier": "Q2",
+   "fraud_probability": 0.095,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.032,
+      "contribution": -0.1755
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 1257,
+      "contribution": -0.1231
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 4.65,
+      "contribution": 0.0971
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 82,
+      "contribution": 0.091
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 11510,
+      "contribution": 0.083
+     },
+     {
+      "feature": "n_claims",
+      "value": 20180,
+      "contribution": 0.0732
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 257,
+      "contribution": 0.0511
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 25,
+      "contribution": -0.051
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51019",
+   "state": "PA",
+   "total_claims": 1657,
+   "total_reimbursed": 1723280,
+   "unique_beneficiaries": 845,
+   "avg_claim_amount": 1040,
+   "inpatient_ratio": 0.171,
+   "volume_tier": "Q2",
+   "fraud_probability": 0.217,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 9.0,
+      "contribution": 0.2846
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.577,
+      "contribution": 0.2603
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 316,
+      "contribution": 0.2222
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.771,
+      "contribution": 0.1805
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 556,
+      "contribution": 0.1102
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 7,
+      "contribution": -0.069
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.18,
+      "contribution": 0.0156
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 11338,
+      "contribution": 0.0123
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51020",
+   "state": "PA",
+   "total_claims": 701,
+   "total_reimbursed": 306337,
+   "unique_beneficiaries": 435,
+   "avg_claim_amount": 437,
+   "inpatient_ratio": 0.056,
+   "volume_tier": "Q1 (lowest)",
+   "fraud_probability": 0.048,
+   "predicted_label": "clean",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.62,
+      "contribution": -0.1433
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.118,
+      "contribution": -0.1255
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 2.51,
+      "contribution": -0.1222
+     },
+     {
+      "feature": "n_claims",
+      "value": 1405,
+      "contribution": -0.1047
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 12,
+      "contribution": -0.0698
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 1.7,
+      "contribution": -0.0457
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 12,
+      "contribution": -0.0437
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.019,
+      "contribution": -0.0325
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51021",
+   "state": "NY",
+   "total_claims": 7641,
+   "total_reimbursed": 61059231,
+   "unique_beneficiaries": 1732,
+   "avg_claim_amount": 7991,
+   "inpatient_ratio": 0.66,
+   "volume_tier": "Q4",
+   "fraud_probability": 0.562,
+   "predicted_label": "borderline",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "n_claims",
+      "value": 12609,
+      "contribution": 0.5214
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 9100,
+      "contribution": 0.5054
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.095,
+      "contribution": 0.4199
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 11.4,
+      "contribution": 0.3753
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 5.77,
+      "contribution": 0.3575
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 6.63,
+      "contribution": 0.1879
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.023,
+      "contribution": 0.1324
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 10985,
+      "contribution": 0.0496
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51022",
+   "state": "TX",
+   "total_claims": 8263,
+   "total_reimbursed": 43934371,
+   "unique_beneficiaries": 1707,
+   "avg_claim_amount": 5317,
+   "inpatient_ratio": 0.497,
+   "volume_tier": "Q4",
+   "fraud_probability": 0.458,
+   "predicted_label": "borderline",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 326,
+      "contribution": 0.5309
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 8285,
+      "contribution": 0.4641
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.45,
+      "contribution": 0.4558
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 16748,
+      "contribution": 0.3646
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 6.1,
+      "contribution": 0.1489
+     },
+     {
+      "feature": "n_claims",
+      "value": 29542,
+      "contribution": 0.1096
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.008,
+      "contribution": 0.0589
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 56,
+      "contribution": -0.0012
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51023",
+   "state": "OH",
+   "total_claims": 1509,
+   "total_reimbursed": 1934538,
+   "unique_beneficiaries": 376,
+   "avg_claim_amount": 1282,
+   "inpatient_ratio": 0.503,
+   "volume_tier": "Q2",
+   "fraud_probability": 0.41,
+   "predicted_label": "borderline",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "unique_procedure_codes",
+      "value": 55,
+      "contribution": 0.5004
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 577,
+      "contribution": 0.391
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.495,
+      "contribution": 0.3282
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 8.16,
+      "contribution": 0.3015
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.517,
+      "contribution": 0.1954
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 5.91,
+      "contribution": 0.1312
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 285,
+      "contribution": 0.0888
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 758,
+      "contribution": -0.0004
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51024",
+   "state": "PA",
+   "total_claims": 4053,
+   "total_reimbursed": 29076222,
+   "unique_beneficiaries": 1168,
+   "avg_claim_amount": 7174,
+   "inpatient_ratio": 0.506,
+   "volume_tier": "Q3",
+   "fraud_probability": 0.6,
+   "predicted_label": "borderline",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 7.96,
+      "contribution": 0.6541
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.759,
+      "contribution": 0.6312
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 339,
+      "contribution": 0.4582
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.242,
+      "contribution": 0.3155
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 473,
+      "contribution": 0.2566
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.166,
+      "contribution": 0.1962
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 56,
+      "contribution": 0.1879
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 9.7,
+      "contribution": 0.0059
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51025",
+   "state": "OH",
+   "total_claims": 1761,
+   "total_reimbursed": 6395952,
+   "unique_beneficiaries": 287,
+   "avg_claim_amount": 3632,
+   "inpatient_ratio": 0.712,
+   "volume_tier": "Q2",
+   "fraud_probability": 0.447,
+   "predicted_label": "borderline",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.25,
+      "contribution": 0.418
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.798,
+      "contribution": 0.3782
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 17231,
+      "contribution": 0.3774
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 7.6,
+      "contribution": 0.3762
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 7.93,
+      "contribution": 0.1857
+     },
+     {
+      "feature": "n_claims",
+      "value": 10678,
+      "contribution": 0.167
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.082,
+      "contribution": 0.0991
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 19.1,
+      "contribution": 0.0857
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51026",
+   "state": "MI",
+   "total_claims": 8080,
+   "total_reimbursed": 67686160,
+   "unique_beneficiaries": 2131,
+   "avg_claim_amount": 8377,
+   "inpatient_ratio": 0.661,
+   "volume_tier": "Q4",
+   "fraud_probability": 0.398,
+   "predicted_label": "borderline",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 8976,
+      "contribution": 0.4402
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 6643,
+      "contribution": 0.345
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.119,
+      "contribution": 0.2882
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 359,
+      "contribution": 0.2606
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.619,
+      "contribution": 0.2171
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 6.94,
+      "contribution": 0.1604
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 16.6,
+      "contribution": 0.0906
+     },
+     {
+      "feature": "n_claims",
+      "value": 26740,
+      "contribution": 0.084
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51027",
+   "state": "OH",
+   "total_claims": 8240,
+   "total_reimbursed": 54367520,
+   "unique_beneficiaries": 2527,
+   "avg_claim_amount": 6598,
+   "inpatient_ratio": 0.38,
+   "volume_tier": "Q4",
+   "fraud_probability": 0.441,
+   "predicted_label": "borderline",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 10638,
+      "contribution": 0.4925
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.732,
+      "contribution": 0.4551
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 6869,
+      "contribution": 0.322
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 4.88,
+      "contribution": 0.2881
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 104,
+      "contribution": 0.2601
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 273,
+      "contribution": 0.1341
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.672,
+      "contribution": 0.0648
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 568,
+      "contribution": 0.0461
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51028",
+   "state": "MI",
+   "total_claims": 7722,
+   "total_reimbursed": 16563690,
+   "unique_beneficiaries": 1152,
+   "avg_claim_amount": 2145,
+   "inpatient_ratio": 0.412,
+   "volume_tier": "Q4",
+   "fraud_probability": 0.574,
+   "predicted_label": "borderline",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 17.1,
+      "contribution": 0.6215
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.801,
+      "contribution": 0.4146
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 228,
+      "contribution": 0.362
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.172,
+      "contribution": 0.3494
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 5.94,
+      "contribution": 0.3116
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.887,
+      "contribution": 0.2725
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 253,
+      "contribution": 0.1795
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 77,
+      "contribution": 0.0871
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51029",
+   "state": "FL",
+   "total_claims": 8282,
+   "total_reimbursed": 47613218,
+   "unique_beneficiaries": 1158,
+   "avg_claim_amount": 5749,
+   "inpatient_ratio": 0.455,
+   "volume_tier": "Q4",
+   "fraud_probability": 0.436,
+   "predicted_label": "borderline",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.058,
+      "contribution": 0.511
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.144,
+      "contribution": 0.3776
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 6.79,
+      "contribution": 0.3118
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.504,
+      "contribution": 0.2765
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 111,
+      "contribution": 0.2231
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 18.4,
+      "contribution": 0.168
+     },
+     {
+      "feature": "n_claims",
+      "value": 5814,
+      "contribution": 0.1131
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 13206,
+      "contribution": 0.0615
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51030",
+   "state": "IL",
+   "total_claims": 6006,
+   "total_reimbursed": 14450436,
+   "unique_beneficiaries": 1161,
+   "avg_claim_amount": 2406,
+   "inpatient_ratio": 0.609,
+   "volume_tier": "Q4",
+   "fraud_probability": 0.438,
+   "predicted_label": "borderline",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "n_claims",
+      "value": 32630,
+      "contribution": 0.4057
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 11.1,
+      "contribution": 0.3359
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.628,
+      "contribution": 0.2966
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.111,
+      "contribution": 0.2709
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.051,
+      "contribution": 0.255
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 12577,
+      "contribution": 0.229
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 3912,
+      "contribution": 0.2132
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 3.85,
+      "contribution": 0.0445
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51031",
+   "state": "NC",
+   "total_claims": 30999,
+   "total_reimbursed": 58712106,
+   "unique_beneficiaries": 5525,
+   "avg_claim_amount": 1894,
+   "inpatient_ratio": 0.454,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.795,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 421,
+      "contribution": 0.6312
+     },
+     {
+      "feature": "n_claims",
+      "value": 33533,
+      "contribution": 0.6191
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 91,
+      "contribution": 0.5913
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 8.36,
+      "contribution": 0.5164
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 7148,
+      "contribution": 0.4957
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.523,
+      "contribution": 0.3444
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 10875,
+      "contribution": 0.3084
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 157,
+      "contribution": 0.1489
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51032",
+   "state": "NC",
+   "total_claims": 35995,
+   "total_reimbursed": 94558865,
+   "unique_beneficiaries": 10026,
+   "avg_claim_amount": 2627,
+   "inpatient_ratio": 0.47,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.728,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 7.46,
+      "contribution": 0.6491
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.679,
+      "contribution": 0.6182
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.76,
+      "contribution": 0.4699
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 456,
+      "contribution": 0.465
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.113,
+      "contribution": 0.3877
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 109,
+      "contribution": 0.3137
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 9411,
+      "contribution": 0.2917
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 551,
+      "contribution": 0.0891
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51033",
+   "state": "FL",
+   "total_claims": 34282,
+   "total_reimbursed": 245321992,
+   "unique_beneficiaries": 5356,
+   "avg_claim_amount": 7156,
+   "inpatient_ratio": 0.502,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.724,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 7.0,
+      "contribution": 0.6174
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.247,
+      "contribution": 0.5398
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.565,
+      "contribution": 0.4614
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 7.01,
+      "contribution": 0.4364
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.11,
+      "contribution": 0.3978
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 300,
+      "contribution": 0.3714
+     },
+     {
+      "feature": "n_claims",
+      "value": 20750,
+      "contribution": 0.3123
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 71,
+      "contribution": 0.128
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51034",
+   "state": "NY",
+   "total_claims": 23866,
+   "total_reimbursed": 206727292,
+   "unique_beneficiaries": 3370,
+   "avg_claim_amount": 8662,
+   "inpatient_ratio": 0.341,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.907,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 4.22,
+      "contribution": 0.9266
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 7315,
+      "contribution": 0.7486
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.154,
+      "contribution": 0.6423
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.084,
+      "contribution": 0.5667
+     },
+     {
+      "feature": "n_claims",
+      "value": 28932,
+      "contribution": 0.5577
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 7.9,
+      "contribution": 0.4077
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 10971,
+      "contribution": 0.3974
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 8.14,
+      "contribution": 0.3305
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51035",
+   "state": "TX",
+   "total_claims": 28578,
+   "total_reimbursed": 249657408,
+   "unique_beneficiaries": 5991,
+   "avg_claim_amount": 8736,
+   "inpatient_ratio": 0.537,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.698,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 4.43,
+      "contribution": 0.6412
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.234,
+      "contribution": 0.6215
+     },
+     {
+      "feature": "n_claims",
+      "value": 28468,
+      "contribution": 0.4437
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.502,
+      "contribution": 0.3857
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 455,
+      "contribution": 0.3204
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 10064,
+      "contribution": 0.3053
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 16745,
+      "contribution": 0.2323
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 389,
+      "contribution": 0.1878
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51036",
+   "state": "NY",
+   "total_claims": 32373,
+   "total_reimbursed": 168307227,
+   "unique_beneficiaries": 4637,
+   "avg_claim_amount": 5199,
+   "inpatient_ratio": 0.323,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.751,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 480,
+      "contribution": 0.6114
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.853,
+      "contribution": 0.6041
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 7.5,
+      "contribution": 0.5974
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 11356,
+      "contribution": 0.4665
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 58,
+      "contribution": 0.3926
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 499,
+      "contribution": 0.2873
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 8.29,
+      "contribution": 0.2518
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.531,
+      "contribution": 0.1929
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51037",
+   "state": "NC",
+   "total_claims": 27959,
+   "total_reimbursed": 163252601,
+   "unique_beneficiaries": 5187,
+   "avg_claim_amount": 5839,
+   "inpatient_ratio": 0.581,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.852,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "unique_procedure_codes",
+      "value": 93,
+      "contribution": 0.8521
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.244,
+      "contribution": 0.8179
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 7.7,
+      "contribution": 0.6951
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.205,
+      "contribution": 0.491
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 8.25,
+      "contribution": 0.3915
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.521,
+      "contribution": 0.3367
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 258,
+      "contribution": 0.2976
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 179,
+      "contribution": 0.1684
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51038",
+   "state": "TX",
+   "total_claims": 5416,
+   "total_reimbursed": 22346416,
+   "unique_beneficiaries": 1157,
+   "avg_claim_amount": 4126,
+   "inpatient_ratio": 0.752,
+   "volume_tier": "Q4",
+   "fraud_probability": 0.885,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 5.7,
+      "contribution": 0.9006
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 7.43,
+      "contribution": 0.8755
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.133,
+      "contribution": 0.598
+     },
+     {
+      "feature": "n_claims",
+      "value": 36017,
+      "contribution": 0.5312
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 10.9,
+      "contribution": 0.4513
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.012,
+      "contribution": 0.4073
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 15396,
+      "contribution": 0.3675
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.766,
+      "contribution": 0.2093
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51039",
+   "state": "OH",
+   "total_claims": 15432,
+   "total_reimbursed": 108332640,
+   "unique_beneficiaries": 3736,
+   "avg_claim_amount": 7020,
+   "inpatient_ratio": 0.734,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.888,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.556,
+      "contribution": 0.785
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 15.3,
+      "contribution": 0.7731
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 5343,
+      "contribution": 0.6668
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 485,
+      "contribution": 0.6074
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.241,
+      "contribution": 0.5543
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 16561,
+      "contribution": 0.471
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 3.58,
+      "contribution": 0.2822
+     },
+     {
+      "feature": "n_claims",
+      "value": 11812,
+      "contribution": 0.2306
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51040",
+   "state": "TX",
+   "total_claims": 7023,
+   "total_reimbursed": 10710075,
+   "unique_beneficiaries": 1178,
+   "avg_claim_amount": 1525,
+   "inpatient_ratio": 0.599,
+   "volume_tier": "Q4",
+   "fraud_probability": 0.848,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 3296,
+      "contribution": 0.8509
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 430,
+      "contribution": 0.7794
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 265,
+      "contribution": 0.5998
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.5,
+      "contribution": 0.4928
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.715,
+      "contribution": 0.489
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 118,
+      "contribution": 0.3614
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 4.44,
+      "contribution": 0.3279
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 12782,
+      "contribution": 0.1177
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51041",
+   "state": "PA",
+   "total_claims": 25915,
+   "total_reimbursed": 99124875,
+   "unique_beneficiaries": 6801,
+   "avg_claim_amount": 3825,
+   "inpatient_ratio": 0.443,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.886,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 9.7,
+      "contribution": 0.8753
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 521,
+      "contribution": 0.8061
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.735,
+      "contribution": 0.5204
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 63,
+      "contribution": 0.5149
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.209,
+      "contribution": 0.4837
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.445,
+      "contribution": 0.4642
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 5.39,
+      "contribution": 0.4582
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 453,
+      "contribution": 0.2276
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51042",
+   "state": "GA",
+   "total_claims": 11271,
+   "total_reimbursed": 56738214,
+   "unique_beneficiaries": 1739,
+   "avg_claim_amount": 5034,
+   "inpatient_ratio": 0.351,
+   "volume_tier": "Q4",
+   "fraud_probability": 0.694,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 10174,
+      "contribution": 0.6293
+     },
+     {
+      "feature": "n_claims",
+      "value": 5943,
+      "contribution": 0.5609
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.529,
+      "contribution": 0.5229
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.169,
+      "contribution": 0.3964
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.188,
+      "contribution": 0.3375
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 6.74,
+      "contribution": 0.2762
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 86,
+      "contribution": 0.2412
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 10.7,
+      "contribution": 0.1545
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51043",
+   "state": "NY",
+   "total_claims": 40712,
+   "total_reimbursed": 207997608,
+   "unique_beneficiaries": 9252,
+   "avg_claim_amount": 5109,
+   "inpatient_ratio": 0.736,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.846,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.238,
+      "contribution": 0.9123
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 13750,
+      "contribution": 0.6441
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 18.6,
+      "contribution": 0.6094
+     },
+     {
+      "feature": "n_claims",
+      "value": 19197,
+      "contribution": 0.5577
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.186,
+      "contribution": 0.4929
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 5.55,
+      "contribution": 0.4609
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 5728,
+      "contribution": 0.2402
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.643,
+      "contribution": 0.086
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51044",
+   "state": "NY",
+   "total_claims": 21225,
+   "total_reimbursed": 145200225,
+   "unique_beneficiaries": 3852,
+   "avg_claim_amount": 6841,
+   "inpatient_ratio": 0.442,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.944,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "unique_procedure_codes",
+      "value": 98,
+      "contribution": 0.8268
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 14359,
+      "contribution": 0.7837
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 5407,
+      "contribution": 0.7365
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 6.29,
+      "contribution": 0.7062
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 522,
+      "contribution": 0.5977
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 447,
+      "contribution": 0.5437
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.79,
+      "contribution": 0.507
+     },
+     {
+      "feature": "n_claims",
+      "value": 27137,
+      "contribution": 0.4231
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51045",
+   "state": "MI",
+   "total_claims": 31523,
+   "total_reimbursed": 39183089,
+   "unique_beneficiaries": 8496,
+   "avg_claim_amount": 1243,
+   "inpatient_ratio": 0.719,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.772,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.63,
+      "contribution": 0.7641
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 80,
+      "contribution": 0.7111
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.104,
+      "contribution": 0.5952
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 506,
+      "contribution": 0.512
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 3305,
+      "contribution": 0.4666
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 6.85,
+      "contribution": 0.2539
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 477,
+      "contribution": 0.1308
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.685,
+      "contribution": 0.086
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51046",
+   "state": "GA",
+   "total_claims": 16997,
+   "total_reimbursed": 138984469,
+   "unique_beneficiaries": 4105,
+   "avg_claim_amount": 8177,
+   "inpatient_ratio": 0.256,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.844,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.083,
+      "contribution": 0.7575
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 18.2,
+      "contribution": 0.7574
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.782,
+      "contribution": 0.5242
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 53,
+      "contribution": 0.4387
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 6.93,
+      "contribution": 0.426
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.13,
+      "contribution": 0.3868
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 485,
+      "contribution": 0.3823
+     },
+     {
+      "feature": "n_claims",
+      "value": 27800,
+      "contribution": 0.3154
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51047",
+   "state": "IL",
+   "total_claims": 21545,
+   "total_reimbursed": 71960300,
+   "unique_beneficiaries": 4787,
+   "avg_claim_amount": 3340,
+   "inpatient_ratio": 0.257,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.934,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "n_claims",
+      "value": 37577,
+      "contribution": 1.1571
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 8738,
+      "contribution": 1.0598
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.128,
+      "contribution": 0.5471
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 6.88,
+      "contribution": 0.5012
+     },
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 9.4,
+      "contribution": 0.495
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 14749,
+      "contribution": 0.421
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 6.83,
+      "contribution": 0.4116
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.248,
+      "contribution": 0.3571
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51048",
+   "state": "GA",
+   "total_claims": 24290,
+   "total_reimbursed": 173114830,
+   "unique_beneficiaries": 4224,
+   "avg_claim_amount": 7127,
+   "inpatient_ratio": 0.679,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.936,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 508,
+      "contribution": 0.9743
+     },
+     {
+      "feature": "n_claims",
+      "value": 29945,
+      "contribution": 0.9093
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.161,
+      "contribution": 0.9023
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 8994,
+      "contribution": 0.6761
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 365,
+      "contribution": 0.6267
+     },
+     {
+      "feature": "reimbursed_per_beneficiary",
+      "value": 15776,
+      "contribution": 0.5596
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.824,
+      "contribution": 0.2232
+     },
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 4.3,
+      "contribution": 0.1114
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51049",
+   "state": "PA",
+   "total_claims": 5982,
+   "total_reimbursed": 37848114,
+   "unique_beneficiaries": 1685,
+   "avg_claim_amount": 6327,
+   "inpatient_ratio": 0.29,
+   "volume_tier": "Q4",
+   "fraud_probability": 0.779,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "claims_per_beneficiary",
+      "value": 8.61,
+      "contribution": 0.6068
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 8.33,
+      "contribution": 0.5828
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 562,
+      "contribution": 0.4674
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 103,
+      "contribution": 0.4517
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 523,
+      "contribution": 0.4064
+     },
+     {
+      "feature": "inpatient_ratio",
+      "value": 0.476,
+      "contribution": 0.3787
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.463,
+      "contribution": 0.3706
+     },
+     {
+      "feature": "mean_claim_reimbursed",
+      "value": 10690,
+      "contribution": 0.2955
+     }
+    ]
+   }
+  },
+  {
+   "provider_id": "PRV51050",
+   "state": "GA",
+   "total_claims": 20346,
+   "total_reimbursed": 155667246,
+   "unique_beneficiaries": 4177,
+   "avg_claim_amount": 7651,
+   "inpatient_ratio": 0.556,
+   "volume_tier": "Q5 (highest)",
+   "fraud_probability": 0.75,
+   "predicted_label": "fraud",
+   "shap": {
+    "base_value": -2.3,
+    "contributions": [
+     {
+      "feature": "mean_inpatient_los_days",
+      "value": 14.2,
+      "contribution": 0.6816
+     },
+     {
+      "feature": "deductible_paid_ratio",
+      "value": 0.066,
+      "contribution": 0.6553
+     },
+     {
+      "feature": "top_diagnosis_concentration",
+      "value": 0.734,
+      "contribution": 0.62
+     },
+     {
+      "feature": "pct_deceased_beneficiaries",
+      "value": 0.23,
+      "contribution": 0.3909
+     },
+     {
+      "feature": "unique_diagnosis_codes",
+      "value": 477,
+      "contribution": 0.385
+     },
+     {
+      "feature": "mean_chronic_conditions",
+      "value": 6.75,
+      "contribution": 0.3683
+     },
+     {
+      "feature": "unique_procedure_codes",
+      "value": 82,
+      "contribution": 0.2873
+     },
+     {
+      "feature": "claims_per_attending_physician",
+      "value": 239,
+      "contribution": 0.0101
+     }
+    ]
+   }
+  }
+ ]
+}

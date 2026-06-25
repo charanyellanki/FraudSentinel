@@ -1,7 +1,7 @@
 import type { RoutingDecision } from "@/lib/types";
 
 export function ConfidenceRouterViz({ routing }: { routing: RoutingDecision }) {
-  const escalated = routing.path === "llm_escalated";
+  const escalated = routing.path === "siu_review";
   return (
     <div className="rounded-xl border border-zinc-200 bg-white">
       <div className="border-b border-zinc-100 px-5 py-4">
@@ -30,9 +30,9 @@ export function ConfidenceRouterViz({ routing }: { routing: RoutingDecision }) {
           </div>
         </div>
         <div className="mt-6 grid grid-cols-3 gap-2 text-center text-[11px]">
-          <Lane label="approve" active={!escalated && routing.probability < routing.low_threshold} tone="success" />
-          <Lane label="LLM review" active={escalated} tone="warning" />
-          <Lane label="decline" active={!escalated && routing.probability > routing.high_threshold} tone="danger" />
+          <Lane label="auto-clear" active={!escalated && routing.probability < routing.low_threshold} tone="success" />
+          <Lane label="SIU review" active={escalated} tone="warning" />
+          <Lane label="investigate" active={!escalated && routing.probability > routing.high_threshold} tone="danger" />
         </div>
       </div>
     </div>
